@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="el">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>myStudiesPlan - DIT</title>
+        <link rel="stylesheet" href="styles.css"> 
+    </head>
+
+    <body>
+        <!-- Κεφαλίδα ιστοσελίδας -->
+        <header class="site-header">
+            <h1>myStudiesPlan - DIT</h1>
+        </header>
+        
+        <!-- Κύριο μενού πλοήγησης -->
+        <nav class="site-nav">
+            <ul>
+                <li><a href="Home.html">Αρχική</a></li>
+                <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
+                <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήατος</a></li>
+                <li><a href="Ptyxio.html">Απετήσεις ληψης πτυχίου </a></li>
+                <li><a href="mathimata.html">Μαθήματα </a></li>
+            </ul>
+        </nav>
+
+        <!-- Κύριο περιεχόμενο της σελίδας -->
+        <main class="content">
+            <section class="main-section">
+
+                <h2>Τελική βαθμολογία μαθήματος</h2>
+                <!-- Κουμπιά επιλογής εξαμήνων -->
+
+                <div class="buttons">
+                    <button class="tab-button" data-target="semester-1">1ο έτος</button>
+                    <button class="tab-button" data-target="semester-2">2ο έτος</button>
+                    <button class="tab-button active" data-target="semester-3">3ο έτος</button>
+                    <button class="tab-button" data-target="semester-4">4ο έτος</button>
+                    <button class="tab-button" data-target="Perasmenamathimata">Καρτέλα περασμένων μαθημάτων</button>
+                    <button class="tab-button" data-target="Komenamathimata">Καρτέλα χρωστούμενων μαθημάτων</button>
+                </div>
+                
+                <!-- Τμήμα για το 1ο έτος -->
+                <div id="semester-1" class="semester-table hidden">
+                    
+                    <h3>Μαθήματα 1ου εξαμήνου</h3>
+                    <table>
+                    
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>1</td>
+                            <td>Γραμμική Άλγεβρα</td>
+                            <td>6</td>
+                            <td>5</td> 
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>2</td>
+                            <td>Διακριτά Μαθηματικά </td>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+
+                        <tr style="color: green; ">
+                            <td>3</td>
+                            <td>Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες </td>
+                            <td>2</td>
+                            <td>7</td>
+                        </tr>
+                        
+                        <tr style="color: green;">
+                            <td>4</td>
+                            <td>Εισαγωγή στον Προγραμματισμό </td>
+                            <td>7</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>5</td>
+                            <td>Λογική Σχεδίαση </td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">5,6</td>
+                        </tr>
+
+                    </table>
+
+                    <h3>Μαθήματα 2ου εξαμήνου</h3>
+                    <table>
+                        
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: green;"> 
+                            <td>1</td>
+                            <td>Ανάλυση Ι</td>
+                            <td>8</td>
+                            <td>10</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>2</td>
+                            <td>Αρχιτεκτονική Υπολογιστών Ι </td>
+                            <td>7</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>3</td>
+                            <td>Δομές Δεδομένων και Τεχνικές Προγραμματισμού </td>
+                            <td>7</td>
+                            <td>6</td>
+                        </tr>
+                        
+                        <tr style="color: red;">
+                            <td>4</td>
+                            <td>Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική </td>
+                            <td>8</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: red;">
+                            <td>5</td>
+                            <td>Αρχιτεκτονική Υπολογιστών Ι (Εργ) </td>
+                            <td>7</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">...</td>
+                        </tr>
+                    </table>
+
+                </div> <!-- Τελος τμήμα για το 1ο έτος -->
+
+                <!-- Τμήμα για το 2ο έτος -->
+                <div id="semester-2" class="semester-table hidden">
+                    
+                    <h3>Μαθήματα 3ου εξαμήνου</h3>
+                    <table>
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: green"> 
+                            <td>1</td>
+                            <td>Ανάλυση ΙΙ</td>
+                            <td>8</td>
+                            <td>6</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>2</td>
+                            <td>Αντικειμενοστραφής Προγραμματισμός </td>
+                            <td>8</td>
+                            <td>6</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>3</td>
+                            <td>Πιθανότητες και Στατιστική </td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        
+                        <tr style="color: green;">
+                            <td>4</td>
+                            <td>Σήματα και Συστήματα </td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">6</td>
+                        </tr>
+                        
+                    </table>
+
+                    <h3>Μαθήματα 4ου εξαμήνου</h3> 
+                    <table>
+                    
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color:green;">
+                            <td>1</td>
+                            <td>Αλγόριθμοι και Πολυπλοκότητα</td>
+                            <td>8</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>2</td>
+                            <td>Δίκτυα Επικοινωνιών I </td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>3</td>
+                            <td>Εργαστήριο Δικτύων Επικοινωνιών Ι </td>
+                            <td>2</td>
+                            <td>8</td>
+                        </tr>
+                        
+                        <tr style="color: green;">
+                            <td>4</td>
+                            <td>Συστήματα Επικοινωνιών </td>
+                            <td>7</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>5</td>
+                            <td>Σχεδίαση και Χρήση Βάσεων Δεδομένων </td>
+                            <td>7</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">6,8</td>
+                        </tr>
+
+                    </table>
+                </div><!-- Τελος τμήμα για το 2ο έτος -->
+
+                <!-- Τμήμα για το 3ο έτος -->
+                <div id="semester-3" class="semester-table hidden">
+
+                    <h3>Μαθήματα 5ου εξαμήνου</h3>
+                    <table>
+                                
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: red;">
+                            <td>1</td>
+                            <td>Λειτουργικά Συστήματα </td>
+                            <td>8</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>2</td>
+                            <td>Παραληλα Συστήματα</td>
+                            <td>6</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: green">
+                            <td>3</td>
+                            <td>Δομη και θεσμοι της ευρωπαικης ενωσης </td>
+                            <td>2</td>
+                            <td>9</td>
+                        </tr>
+                        
+                        <tr style="color: green;">
+                            <td>4</td>
+                            <td>Αρχιτεκτονική Υπολογιστών ΙΙ  </td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>5</td>
+                            <td>Υλοποίηση Συστημάτων Βάσεων Δεδομένων  </td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+                        <tr style="color: green;">
+                            <td>6</td>
+                            <td>Ψυφιακη προσβασημοτητα και υποστηρικτικες τεχνολογιες πληροφορικης  </td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+                
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">...</td>
+                        </tr>
+
+                    </table>
+
+                    <h3>Μαθήματα 6ου εξαμήνου</h3>
+                    <table>     
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>1</td>
+                            <td>Προγραμματισμός Συστήματος   </td>
+                            <td>8</td>
+                            <td>9</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>2</td>
+                            <td>Τεχνολογίες Εφαρμογών Διαδικτύου  </td>
+                            <td>6</td>
+                            <td>9</td>
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>3</td>
+                            <td>Διοίκηση Έργων και Τεχνικές Παρουσίασης και Συγγραφής Επιστημονικών Εκθέσεων </td>
+                            <td>2</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">8,3</td>
+                        </tr>
+
+                    </table>
+                </div><!-- Τελος τμήμα για το 3ο έτος -->
+                
+                <!-- Τμήμα για το 4ο έτος -->
+                <div id="semester-4" class="semester-table ">
+
+                    <h3>Μαθήματα 7ου εξαμήνου</h3>
+                    <table>
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: green;">
+                            <td>1</td>
+                            <td>Διδακτική της Πληροφορικής</td>
+                            <td>6</td>
+                            <td>7</td>
+                        </tr>
+
+                        <tr style="color: green">
+                            <td>2</td>
+                            <td>Τεχνολογίες της Πληροφορίας και των Επικοινωνιών (ΤΠΕ) στη Μάθηση </td>
+                            <td>6</td>
+                            <td>6</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>3</td>
+                            <td>Επικοινωνία Ανθρώπου Μηχανής</td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>4</td>
+                            <td>Δίκτυα Επικοινωνιών II</td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>5</td>
+                            <td>Τηλεπικοινωνιακά Δίκτυα</td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>6</td>
+                            <td>Συστήματα Κινητών και Προσωπικών Επικοινωνιών</td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>7</td>
+                            <td>Project</td>
+                            <td>8</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">...</td>
+                        </tr>
+
+                    </table>
+
+                    <h3>Μαθήματα 8ου εξαμήνου</h3>
+                    <table>
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b> </td>
+                            <td><b>ECTS</b></td>
+                            <td><b>Τελικός προβιβάσιμος βαθμός </b></td> 
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>1</td>
+                            <td>Σχολική Τάξη & Μικροδιδασκαλία   </td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>2</td>
+                            <td>Διαχείριση Δικτύων   </td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+                
+                        <tr style="color: black">
+                            <td>3</td>
+                            <td>Ψηφιακές Επικοινωνίες   </td>
+                            <td>6</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>4</td>
+                            <td>Αρχιτεκτονική Υπολογιστών Ι</td>
+                            <td>7</td>
+                            <td>...</td>
+                        </tr>
+
+                        <tr style="color: black">
+                            <td>5</td>
+                            <td>Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική   </td>
+                            <td>8</td>
+                            <td>...</td>
+                        </tr>
+
+                    
+
+                        <tr style="color: black;">
+                            <td colspan="3" style="text-align: center;"><b>ΜΕΣΟΣ ΟΡΟΣ</b></td>
+                            <td style="text-align: center;">...</td>
+                        </tr>
+
+                    </table>
+                </div><!-- Τελος τμήμα για το 4ο έτος -->
+                
+                <!-- Τμήμα για τα περασμενα μαθηματα -->
+                <div id="Perasmenamathimata" class="semester-table hidden">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="color: black;">A/A</th>
+                                <th>Μάθημα</th>
+                                <th>ECTS</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Γραμμική Άλγεβρα</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Διακριτά Μαθηματικά</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Εισαγωγή στον Προγραμματισμό</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Λογική Σχεδίαση</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ανάλυση Ι</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Δομές Δεδομένων και Τεχνικές Προγραμματισμού</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Ανάλυση ΙΙ</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Αντικειμενοστραφής Προγραμματισμός</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Σήματα και Συστήματα</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td>Εργαστήριο Δικτύων Επικοινωνιών Ι</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>Συστήματα Επικοινωνιών</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>Σχεδίαση και Χρήση Βάσεων Δεδομένων</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td>Παραλληλα συστηματα</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td>Υλοποίηση Συστημάτων Βάσεων Δεδομένων</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>Προγραμματισμός Συστήματος</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td>Τεχνολογίες Εφαρμογών Διαδικτύου</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>18</td>
+                                <td>Δομή και Θεσμοί της Ευρωπαϊκής Ένωσης</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td>Ψηφιακή Προσβασιμότητα και Υποστηρικτικές Τεχνολογίες Πληροφορικής</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td>Διοίκηση Έργων και Τεχνικές Παρουσίασης και Συγγραφής Επιστημονικών Εκθέσεων</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td>Αρχιτεκτονική Υπολογιστών ΙΙ</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>22</td>
+                                <td>Δίκτυα Επικοινωνιών Ι</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td>Πιθανότητες και Στατιστική</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td>Αλγόριθμοι και Πολυπλοκότητα</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td>Διδακτική της Πληροφορικής</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>Τεχνολογίες της Πληροφορίας και των Επικοινωνιών (ΤΠΕ) στη Μάθηση	</td>
+                                <td>7</td>
+                            </tr>
+                          
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- Τμήμα για τα χροστουμενα μαθηματα -->
+                <div id="Komenamathimata" class="semester-table hidden">
+                    <table style="color: red;">
+                        <thead>
+                            <tr>
+                                <th style="color: black;">A/A</th>
+                                <th style="color: black;">Μάθημα</th>   
+                                <th style="color: black;">ECTS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr>
+                                <td>1</td>
+                                <td>Αρχιτεκτονική Υπολογιστών Ι</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ηλεκτρομαγνητισμός Οπτική συνχρωνη Φυσική</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Λειτουργικά Συστήματα</td>
+                                <td>8</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            
+        <!-- Sidebar με επιπλέον πληροφορίες -->
+        <aside class="sidebar">
+
+            <P style="text-align:center;">📅<b>Ημερομηνία - Ώρα ενημέρωσης 31/1/206 </b> </P>
+
+            <h2>Πληροφορίες - Προοδος</h2>
+            <ul>
+                <li>📚 Περασμένα μαθήματα: 26</li>
+                <li>🎓 ECTS: 155 / 240</li>
+                <li>📊 Μέσος Όρος: 7</li>
+            </ul>
+
+            <h3>Γρήγορη Πλοήγηση</h3>
+            <ul>
+                <li><a href="Home.html">Αρχική</a></li>
+                <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
+                <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήματος</a></li>
+                <li><a href="Ptyxio.html">Απαιτήσεις για την Λήψη Πτυχίου</a></li>
+                <li><a href="mathimata.html">Μαθήματα</a></li>
+            </ul>
+
+            <h3>Πρόοδος Πτυχίου</h3>
+            <div class="progress-container" style="width: 80%;">
+                <div class="progress-bar" style="width: 49%;">65%</div>
+            </div>
+                
+             
+        </aside>
+
+    </main>
+
+    <!-- Υποσέλιδο με δικαιώματα -->
+    <footer class="site-footer">
+        <p>© Antony 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>

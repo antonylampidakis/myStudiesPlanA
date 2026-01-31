@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="el">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>myStudiesPlan - DIT</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Κεφαλίδα ιστοσελίδας -->
+        <header class="site-header">
+            <h1>myStudiesPlan - DIT</h1>
+        </header>
+
+         <!-- Κύριο μενού πλοήγησης -->
+        <nav class="site-nav">
+            <ul>
+                <li><a href="Home.html">Αρχική</a></li>
+                <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
+                <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήατος</a></li>
+                <li><a href="Ptyxio.html">Απετήσεις ληψης πτυχίου </a></li>
+                <li><a href="mathimata.html">Μαθήματα </a></li>
+            </ul>
+        </nav>
+    
+        <!-- Κύριο περιεχόμενο της σελίδας -->
+        <main class="content">
+            <section class="main-section">
+                <h2>Αναλυτική βαθμολογία</h2>
+                
+                <!-- Κουμπιά επιλογής εξαμήνων -->
+                <div class="buttons">
+                    <button class="tab-button" data-target="semester-1">1ο έτος</button>
+                    <button class="tab-button" data-target="semester-2">2ο έτος</button>
+                    <button class="tab-button active" data-target="semester-3">3ο έτος</button>
+                    <button class="tab-button" data-target="semester-4">4ο έτος</button>
+                </div>
+                
+                <!-- Τμήμα για το 1ο έτος -->
+                <div id="semester-1" class="semester-table hidden">
+                
+                    <h3>2022-2023 χειμερινό εξαμήνου(1ο)</h3>
+                    <table>
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b></td>
+                            <td><b>Όνομα Διδάσκοντα</b></td>
+                            <td><b>Βαθμός εργαστηριού</b></td>
+                            <td><b>1ης εργασίας</b></td>
+                            <td><b>2ης εργασίας</b></td>
+                            <td><b>3ης εργασίας</b></td>
+                            <td><b>4ης εργασίας</b></td>
+                            <td><b>Τελικός βαθμός</b></td>
+                        </tr>
+
+                        <tr style="color: red;"  data-row="1-1">
+                            <td>1</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Γραμμικής Άλγεβρας-1.pdf" download>Γραμμική Άλγεβρα</a></td>
+                            <td>Γιαννοπούλου Αρχοντία</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+
+                        <tr style="color: red;" data-row="1-2">
+                            <td>2</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Διακριτα Μαθηματικα-1.pdf" download>Διακριτά Μαθηματικά </a></td>
+                            <td>Τζάμος Χρήστος</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="1-3">
+                            <td>3</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Εισαγωγη στην πληροφορικη-1.pdf" download>Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες</a></td>
+                            <td>Μαρία Ρούσσου</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>7</td>
+                        </tr>
+                        <tr style="color: red;" data-row="1-4">
+                            <td>4</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Εισαγωγη στον προγραματισμο-1.pdf" download>Εισαγωγή στον Προγραμματισμό</a></td>
+                            <td>Παναγιώτης Σταματόπουλος</td>
+                            <td>12/20</td>
+                            <td>73/100</td>
+                            <td>98/100</td> 
+                            <td>95/100</td>
+                            <td>0/100</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr style="color: red;"data-row="1-5">
+                            <td>5</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Λογικη Σχεδιαση-1.pdf" download>Λογική Σχεδίαση</a></td>
+                            <td>Πασχάλης Αντώνης</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                    </table>
+
+                    <h3>2022-2023 εαρινό εξαμήνου (2ο)</h3>
+                    <table>
+                
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b></td>
+                            <td><b>Όνομα Διδάσκοντα</b></td>
+                            <td><b>Βαθμός εργαστηριού</b></td>
+                            <td><b>1ης εργασίας</b></td>
+                            <td><b>2ης εργασίας</b></td>
+                            <td><b>3ης εργασίας</b></td>
+                            <td><b>4ης εργασίας</b></td>
+                            <td><b>KOUIZ</b></td>
+                            <td><b>Τελικός βαθμός</b></td>
+                        </tr>
+                
+                        <tr style="color: red;" data-row="1-2-1">
+                            <td>1</td>
+                            <td><a href="Βαθμοι/Βαθμολογία ΑναλυσηΙ-2.pdf" download>Ανάλυση Ι</a></td>
+                            <td>Δοδος Παντελειμον</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>   
+                            <td>-</td>                    
+                            <td>1</td>
+                        </tr>
+                
+                        <tr style="color: green;" data-row="1-2-2">
+                            <td>2</td>
+                            <td><a href="Βαθμοι/Βαθμολογία-Αρχιτεκτονική-Υπολογιστών-Ι-2.pdf" download>Αρχιτεκτονική Υπολογιστών Ι</a></td>
+                            <td>Γκιζόπουλος Δημήτριος</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>
+                            <td>5</td>
+                        </tr>
+                
+                        <tr style="color: red;"data-row="1-2-3">
+                            <td>3</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Δομες δεδομενων -2.pdf" download>Δομές Δεδομένων και Τεχνικές Προγραμματισμού</a></td>
+                            <td>Κουμπαράκης Μανόλης</td>
+                            <td>1,2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0,3</td> 
+                            <td>0</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                        
+                        <tr style="color: red;"data-row="1-2-4">
+                            <td>4</td>
+                            <td><a href="Βαθμοι/Βαθμολογία-Φυαικη-2.pdf" download>Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική</a></td>
+                            <td>Τσίπουρας Αριστείδης</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+                
+                        <tr style="color: red;"data-row="1-2-5" >
+                            <td>5</td>
+                            <td><a href="Βαθμοι/Βαθμολογία-Αρχιτεκτονική-Υπολογιστών-Ι-2.pdf" download>Αρχιτεκτονική Υπολογιστών Ι (Εργ) </a></td>
+                            <td>Ξεργιάς Σπύρος</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+                    </table>  
+
+                    <h3>2023 Εξεταστική Σεπτεμβρίου</h3>
+                    <table>
+            
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b></td>
+                            <td><b>Όνομα Διδάσκοντα</b></td>
+                            <td><b>Βαθμός εργαστηριού</b></td>
+                            <td><b>1ης εργασίας</b></td>
+                            <td><b>2ης εργασίας</b></td>
+                            <td><b>3ης εργασίας</b></td>
+                            <td><b>4ης εργασίας</b></td>
+                            <td><b>Τελικός βαθμός</b></td>
+                        </tr>
+                
+                        <tr style="color: red;" data-row="1-3-1">
+                            <td>1</td>
+                            <td><a href="Βαθμοι/Βαθμολογία ΑναλυσηΙ-2-sep.pdf" download>Ανάλυση Ι</a></td>
+                            <td>Δοδος Παντελειμον</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                
+                        <tr style="color: red;" data-row="1-3-2">
+                            <td>2</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Δομες δεδομενων -2-sep.pdf" download>Δομές Δεδομένων και Τεχνικές Προγραμματισμού</a></td>
+                            <td>Κουμπαράκης Μανόλης</td>
+                            <td>1,2</td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0,3</td> 
+                            <td>0</td>
+                            <td>3</td>
+                        </tr>
+                        
+                
+                        <tr style="color: red;" data-row="1-3-3">
+                            <td>3</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Γραμμικής Άλγεβρας-1-sep.pdf" download>Γραμμική Άλγεβρα</a></td>
+                            <td>Γιαννοπούλου Αρχοντία</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>
+                        </tr>
+                
+                        <tr style="color: red;" data-row="1-3-4">
+                            <td>4</td>
+                            <td>Εισαγωγή στον Προγραμματισμό </td>
+                            <td>Παναγιώτης Σταματόπουλος</td>
+                            <td>12/20</td>
+                            <td>73/100</td>
+                            <td>98/100</td> 
+                            <td>95/100</td>
+                            <td>-</td>
+                            <td>3</td>
+                        </tr>
+                
+                        <tr style="color: red;" data-row="1-3-5">
+                            <td>5</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Λογικη Σχεδιαση-1-sep.pdf" download>Λογική Σχεδίαση</a></td>
+                            <td>Πασχάλης Αντώνης</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>  
+                            <td>2</td>
+                        </tr>
+            
+                    </table>
+                </div><!-- Τελος τμήμα για το 1ο έτος -->
+                
+                <!-- Τμήμα για το 2ο έτος -->
+                <div id="semester-2" class="semester-table hidden">
+                
+                    <h3>2023-2024 χειμερινό εξαμήνου (3ο)</h3>
+                    <table>
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b></td>
+                            <td><b>Όνομα Διδάσκοντα</b></td>
+                            <td><b>Βαθμός εργαστηριού</b></td>
+                            <td><b>1ης εργασίας</b></td>
+                            <td><b>2ης εργασίας</b></td>
+                            <td><b>3ης εργασίας</b></td>
+                            <td><b>4ης εργασίας</b></td>
+                            <td><b>Βαθμόs Κουίζ</b></td>
+                            <td><b>Τελικός βαθμός</b></td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="2-1-1">
+                            <td>1</td>
+                            <td><a href="Βαθμοι/Βαθμολογία ΑναλυσηΙΙ-3.pdf" download>Ανάλυση IΙ</a></td>
+                            <td>Γιώργος Χαλκιάς</td>
+                            <td>-</td>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>6</td>
+                        </tr>
+
+
+                        <tr style="color: red;" data-row="2-1-2">
+                            <td>2</td>
+                            <td><a href="Βαθμοι/Βαθμολογία-Αντικειμενοστραφης-3.pdf" download>Αντικειμενοστραφής Προγραμματισμός</a></td>
+                            <td>Αναστασία Λυγίζου</td>
+                            <td>2,7</td>
+                            <td>5</td>
+                            <td>-</td>
+                            <td>-</td> 
+                            <td>-</td>
+                            <td>-</td>
+                            <td>3,5</td>
+                        </tr>
+                        
+
+                        <tr style="color: red;"data-row="2-1-3">
+                            <td>3</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Πυθανοτητες-3.pdf" download>Πιθανότητες και Στατιστική</a></td>
+                            <td>Αχλιόπτας Δημήτρης</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>3,5</td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="2-1-4">
+                            <td>4</td>
+                            <td><a href="Βαθμοι/Βαθμολογία-Συματα και συστηματα-3.pdf" download>Σήματα και Συστήματα </a></td>
+                            <td>Γιάννης Παναγάκης</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td> 
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="2-1-5">
+                            <td>5</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Γραμμικής Άλγεβρας-3.pdf" download>Γραμμική Άλγεβρα</a></td>
+                            <td>Νάκος Βασίλειος</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>  
+                            <td>6</td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="2-1-6">
+                            <td>6</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Εισαγωγη στον προγραματισμο-3.pdf" download>Εισαγωγή στον Προγραμματισμό</a></td>
+                            <td>Αυγερινός Αθανάσιος</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>  
+                            <td>5</td>
+                        </tr>
+
+                        <tr style="color: red;" data-row="2-1-7">
+                            <td>7</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Λογικη Σχεδιαση-3.pdf" download>Λογική Σχεδίαση</a></td>
+                            <td>Βασίλειος Καρακώστας</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>  
+                            <td>0</td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="2-1-8">
+                            <td>8</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Διακριτα Μαθηματικα-3.pdf" download>Διακριτά Μαθηματικά </a></td>
+                            <td>Τζάμος Χρήστος</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>1</td>  
+                            <td>6</td>
+                        </tr>
+            
+                    </table>
+
+                    <h3>2023-2024 εαρινό εξαμήνου (4ο)</h3>
+                    <table>
+                  
+                        <tr>
+                            <td><b>A/A</b></td>
+                            <td><b>Όνομα Μαθήματος</b></td>
+                            <td><b>Όνομα Διδάσκοντα</b></td>
+                            <td><b>Βαθμός εργαστηριού</b></td>
+                            <td><b>1ης εργασίας</b></td>
+                            <td><b>2ης εργασίας</b></td>
+                            <td><b>3ης εργασίας</b></td>
+                            <td><b>4ης εργασίας</b></td>
+                            <td><b>Βαθμος εξετασης</b></td>
+                            <td><b>Τελικός βαθμός</b></td>
+                        </tr>
+
+                        <tr style="color: red;" data-row="2-2-1">
+                            <td>1</td>
+                            <td>Αλγόριθμοι και Πολυπλοκότητα</td>
+                            <td>Γιαννοπούλου Αρχοντία</td>
+                            <td>-</td>
+                            <td>3,5</td>
+                            <td>10</td>
+                            <td>7</td>
+                            <td>6,5</td> 
+                            <td>1</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr style="color: red;"  data-row="2-2-2">
+                            <td>2</td>
+                            <td><a href="Βαθμοι/Βαθμολογία Δικτια 1.pdf" download> Δίκτυα Επικοινωνιών I </td>
+                            <td>Σταυρακάκης Ιωάννης</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td> 
+                            <td>-</td>
+                            <td>2</td>
+                        </tr>
+
+                        <tr style="color: green;" data-row="2-2-3">
+                            <td>3</td>
+                            <td><a href="Βαθμοι/Βαθμολογια-Εργ.Δυκτιων.pdf" download>Εργαστήριο Δικτύων Επικοινωνιών Ι </a></td>
+                            <td>Νάσος Βάιος</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td> 
+                            <td>-</td>
+                            <td>8</td>
+                        </tr>
+                        
+                        <tr style="color: red;" data-row="2-2-4">
+                            <td>4</td>
+                            <td><a href="Βαθμοι/Βαθμολογια-Συστηματα επικοινωνιων.pdf" download>Συστήματα Επικοινωνιών </a></td>
+                            <td>Γεώργιος Αλεξανδρόπουλος</td>
+                            <td>0.96</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td> 
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+
+                        <tr style="color: red;" data-row="2-2-5">
+                            <td>5</td>
+                            <td><a href="Βαθμοι/Βαθμολογια-Βασεις δεδομεων.pdf" download>Σχεδίαση και Χρήση Βάσεων Δεδομένων</a> </td>
+                            <td>Μαρία Ρούσσου</td>
+                            <td>-</td>
+                            <td>77/100</td>
+                            <td>30/100</td>
+                            <td>50/100</td>
+                            <td>-</td> 
+                            <td>36</td>
+                            <td>4</td>
+                        </tr>
+
+                        <tr style="color: red;" data-row="2-2-6">
+                            <td>6</td>
+                            <td><a href="Βαθμοι/Βαθμολογια ΑναλυσηΙ-3.pdf" download>Αναλυση Ι</a> </td>
+                            <td>Τιρος Κωσταντινος </td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td> 
+                            <td>-</td>
+                            <td>0</td>
+                        </tr>
+              
+                        <tr style="color: green;" data-row="2-2-7">
+                                <td>7</td>
+                                <td><a href="Βαθμοι/Βαθμολογία Δομες δεδομενων - 4.pdf" download>Δομές Δεδομένων</a> </td>
+                                <td>Μανόλης Κουμπαράκης </td>
+                                <td>1,8/1,8</td>
+                                <td>1,3/1,6</td>
+                                <td>0,17/1,6</td>
+                                <td>1,10/1,6</td>
+                                <td>-</td> 
+                                <td>2,27/3,4</td>
+                                <td>6</td>
+                            </tr>
+                    </table>
+
+                    <h3>2024 Εξεταστική Σεπτεμβρίου</h3>
+                    <table>
+          
+                            <tr>
+                                <td><b>A/A</b></td>
+                                <td><b>Όνομα Μαθήματος</b></td>
+                                <td><b>Όνομα Διδάσκοντα</b></td>
+                                <td><b>Βαθμός εργαστηριού</b></td>
+                                <td><b>1ης εργασίας</b></td>
+                                <td><b>2ης εργασίας</b></td>
+                                <td><b>3ης εργασίας</b></td>
+                                <td><b>4ης εργασίας</b></td>
+                                <td><b>Βαθμος εξετασης</b></td>
+                                <td><b>Τελικός βαθμός</b></td>
+                            </tr>
+                            
+                            <tr style="color: green;" data-row="2-3-1">
+                                <td>1</td>
+                                <td><a href="Βαθμοι/Βαθμολογία Λογικη Σχεδιαση-2-sep.pdf" download>Λογική Σχεδίαση</a></td>
+                                <td>Βασίλειος Καρακώστας</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>5</td>
+                            </tr>
+        
+                            <tr style="color: red;" data-row="2-3-2">
+                                <td>2</td>
+                                <td><a href="Βαθμοι/Βαθμολογία-Αντικειμενοστραφης-sep.pdf" download>Αντικειμενοστραφής Προγραμματισμός</a></td>
+                                <td>Αναστασία Λυγίζου</td>
+                                <td>2,7</td>
+                                <td>5</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>3,5</td>
+                            </tr>
+                
+                            <tr style="color: red;" data-row="2-3-3">
+                                <td>3</td>
+                                <td><a href="Βαθμοι/Βαθμολογία ΑναλυσηΙ-3-sep.pdf" download>Αναλυση Ι</a></td>
+                                <td>Τιρος Κωσταντινος</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>0</td>
+                            </tr>
+                        
+                        
+                            <tr style="color: red;" data-row="2-3-4">
+                                <td>4</td>
+                                <td><a href="Βαθμοι/Βαθμολογία Δικτια 1-sep.pdf" download>Δικτια Επικοινωνιών I</a></td>
+                                <td>Σταυρακάκης Ιωάννης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>2</td>
+                            </tr>
+        
+                            <tr style="color: red;" data-row="2-3-5">
+                                <td>5</td>
+                                <td>Αλγόριθμοι και Πολυπλοκότητα</td>
+                                <td>Γιαννοπούλου Αρχοντία</td>
+                                <td>-</td>
+                                <td>3,5</td>
+                                <td>10</td>
+                                <td>7</td>
+                                <td>6,5</td> 
+                                <td>-</td>
+                                <td>4</td>
+                            </tr>
+                        
+                            <tr style="color: red;" data-row="2-3-6">
+                                <td>6</td>
+                                <td><a href="Βαθμοι/ΣΧΒΔ_SEPT24.pdf" download>Σχεδίαση και Χρήση Βάσεων Δεδομένων</a></td>
+                                <td>Μαρία Ρούσσου</td>
+                                <td>-</td>
+                                <td>77/100</td>
+                                <td>30/100</td>
+                                <td>50/100</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>0</td>
+                            </tr>
+          
+                    </table>
+                </div><!-- Τελος τμήμα για το 2ο έτος -->
+                
+                <!-- Τμήμα για το 3ο έτος -->
+                <div id="semester-3" class="semester-table hidden"> 
+
+                    <h3>2024-2025 χειμερινό εξαμήνου (5ο)</h3>
+                    <table>
+          
+                            <tr>
+                                <td><b>A/A</b></td>
+                                <td><b>Όνομα Μαθήματος</b></td>
+                                <td><b>Όνομα Διδάσκοντα</b></td>
+                                <td><b>Βαθμός εργαστηριού</b></td>
+                                <td><b>1ης εργασίας</b></td>
+                                <td><b>2ης εργασίας</b></td>
+                                <td><b>3ης εργασίας</b></td>
+                                <td><b>4ης εργασίας</b></td>
+                                <td><b>Βαθμος εξετασης</b></td>
+                                <td><b>Τελικός βαθμός</b></td>
+                            </tr>
+                            
+                            <tr style="color: red" data-row="3-1-1">
+                                <td>1</td>
+                                <td>Λειτουργικά Συστήματα </td>
+                                <td>Σταθης χαντζιεφθιμιαδης</td>
+                                <td>-</td>
+                                <td>10/100</td>
+                                <td>0/100</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>10/100</td>
+                                <td>1</td>
+                            </tr>
+            
+                            <tr style="color: red;" data-row="3-1-2">
+                                <td>2</td>
+                                <td><a href="Βαθμοι/Βαθμολογία-Αρχιτεκτονική-Υπολογιστών-ΙΙ-2025-01-January.pdf" download>Αρχιτεκτονικη υπολογιστων ΙΙ  </a></td>
+                                <td>Δημητρης Γκιζόπουλος</td>
+                                <td>-</td>
+                                <td>8</td>
+                                <td>5</td> 
+                                <td>-</td>
+                                <td>-</td>
+                                <td>1</td>
+                                <td>2</td>
+                            </tr>
+                
+                            <tr style="color: green" data-row="3-1-3">
+                                <td>3</td>
+                                <td><a href="Βαθμοι/Βαθμολογία-Αντικειμενοστραφης-feb25.pdf">Αντικειμενοστραφής Προγραμματισμός</a></td>
+                                <td>Αναστασία Λυγίζου</td>
+                                <td>-</td>
+                                <td>10/11</td>
+                                <td>1,5/1,5</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>2,5</td>
+                                <td>6</td>
+                            </tr>
+                            
+                            <tr style="color: green" data-row="3-1-4">
+                                <td>4</td>
+                                <td><a href="Βαθμοι/Βαθμολογια Δομη και θεσμοι.pdf"download>Δομη και θεσμοί της ευρωπαϊκής ένωσης</a> </td>
+                                <td>Τολιδης Ιωαννης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>9</td>
+                            </tr>
+            
+                            <tr style="color: green" data-row="3-1-5">
+                                <td>5</td>
+                                <td><a href="Βαθμοι/Εξεταστική Φεβρουαρίου.pdf" download>Υλοποίηση Συστημάτων Βάσεων Δεδομένων</a> </td>
+                                <td>Θεοφηλος Μαιλης</td>
+                                <td>-</td>
+                                <td>10</td>
+                                <td>6</td>
+                                <td>10</td>
+                                <td>-</td> 
+                                <td>5</td> 
+                                <td>7</td>
+                            </tr>
+                            
+                            <tr style="color: green;" data-row="3-1-6">
+                                <td>6</td>
+                                <td><a href="Βαθμοι/Βαθμολογία-Παράλληλα-Συστήματα-Φεβρουαρίου-2025.pdf">Παράλληλα συστήματα</a></td>
+                                <td>Καρακωστας Βασίλειος</td>
+                                <td>-</td>
+                                <td>6.5</td>
+                                <td>6</td>
+                                <td>8.5</td>
+                                <td>-</td> 
+                                <td>2.2</td> 
+                                <td>5</td>
+                            </tr>
+            
+                            <tr style="color: green;" data-row="3-1-8">
+                                <td>7</td>
+                                <td><a href="Βαθμοι/Ψηφιακή Προσβασιμότητα και Υποστηρικτικές Τεχνολογίες Πληροφορικής βαθμοί  .pdf" download>Ψυφιακη προσβασημοτητα και υποστηρικτικες τεχνολογιες πληροφορικης</a> </td>
+                                <td>Αλεξανδρος πινο</td>
+                                <td>-</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>7</td>
+                                <td>6,5</td> 
+                                <td>3,8</td> 
+                                <td>6</td>
+                            </tr>
+            
+                    </table>
+
+                    <h3>2024-2025 εαρινό εξαμήνου (6ο)</h3>
+                    <table>
+                
+                            <tr>
+                                <td><b>A/A</b></td>
+                                <td><b>Όνομα Μαθήματος</b></td>
+                                <td><b>Όνομα Διδάσκοντα</b></td>
+                                <td><b>κουιζ</b></td>
+                                <td><b>1ης εργασίας</b></td>
+                                <td><b>2ης εργασίας</b></td>
+                                <td><b>3ης εργασίας</b></td>
+                                <td><b>Γραπτο</b></td>
+                                <td><b>Τελικός βαθμός</b></td>
+                            </tr>
+                        
+                            <tr style="color: red;" data-row="3-2-2">
+                                <td>1</td>
+                                <td>Αλγόριθμοι και Πολυπλοκότητα </td>
+                                <td>Γιαννοπούλου Αρχοντια</td>
+                                <td>-</td>
+                                <td>9,1</td>
+                                <td>8,7</td>
+                                <td>10,6</td> 
+                                <td>-</td>
+                                <td>4</td>
+                            </tr>
+                            
+                            <tr style="color: green" data-row="3-2-1">
+                                <td>2</td>
+                                <td><a href="Βαθμοι/Βαθμολογια προγραματισμος συστηματος.pdf"> Προγραμματισμός Συστήματος </a> </td>
+                                <td>Ντουλας Αλεξανδρος</td>
+                                <td>1/2</td>
+                                <td>100</td>
+                                <td>90</td>
+                                <td>-</td>
+                                <td>83</td>
+                                <td>9</td>
+                            </tr>
+                    
+                            <tr style="color: green" data-row="3-2-3">
+                                <td>3</td>
+                                <td><a href="Βαθμοι/Βαθμολογια Αναλυση 1-2025.pdf">Ανάλυση Ι </a> </td>
+                                <td>Σμιρνελης Παναγιώτης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>10</td>
+                            </tr>
+                            
+                            <tr style="color: RED" data-row="3-2-4">
+                                <td>4</td>
+                                <td><a href="Βαθμοι/Δυκτια ιουνιοσ 2025.pdf" download>Δίκτυα Επικοινωνιών Ι</a> </td>
+                                <td>Σταυρακάκος Ιωάννης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>1</td>
+                            </tr>
+                    
+                            <tr style="color: green;" data-row="3-2-6">
+                                <td>5</td>
+                                <td><a href="Βαθμοι/Βαθμολογια Συστηματα επικοινωνιων-2025.pdf" download>Συστήματα Επικοινώνιων</a> </td>
+                                <td>Κανελλος γιωργος</td>
+                                <td>6/10</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>6</td> 
+                                <td>7</td>
+                            </tr>
+                            
+                            <tr style="color: green;" data-row="3-2-7">
+                                <td>6</td>
+                                <td><a href="Βαθμοι/Βαθμολογια ΣΧΒΔ -ΙΟΥΝΙΟΣ 2025.pdf" download>ΣΧΒΔ</a> </td>
+                                <td>Ρουσου μαρια</td>
+                                <td>-</td>
+                                <td>75</td>
+                                <td>72</td>
+                                <td>-</td>
+                                <td>63</td> 
+                                <td>7</td>
+                            </tr>
+                    
+                            <tr style="color: green;" data-row="3-2-8">
+                                <td>7</td>
+                                <td><a href="Βαθμοι/τεδ-Ιουνιος2025.pdf" download>Τεχνολογίες Εφαρμογών Διαδικτύου</a> </td>
+
+                                <td>Χαμοδρακας Ιωαννης</td>
+                                <td>-</td>
+                                <td>9.75</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>9</td>
+                            </tr>
+
+                            <tr style="color: green;" data-row="3-2-9">
+                                <td>8</td>
+                                <td><a href="Βαθμοι/δοιηκηση εργων-ιουνιοσ2025.pdf">Διοίκηση Έργων και Τεχνικές Παρουσίασης και Συγγραφής Επιστημονικών Εκθέσεων</a></td>
+                                <td>Τολιδης Ιωαννης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                                <td>7</td>
+                            </tr>
+                    
+                    </table>
+
+                    <h3>2025 Εξεταστική Σεπτεμβρίου</h3>
+                    <table>
+                
+                            <tr>
+                                <td><b>A/A</b></td>
+                                <td><b>Όνομα Μαθήματος</b></td>
+                                <td><b>Όνομα Διδάσκοντα</b></td>
+                                <td><b>Βαθμός εργαστηριού</b></td>
+                                <td><b>1ης εργασίας</b></td>
+                                <td><b>2ης εργασίας</b></td>
+                                <td><b>3ης εργασίας</b></td>
+                                <td><b>Γραπτο</b></td>
+                                <td><b>Τελικός βαθμός</b></td>
+                            </tr>
+                        
+                            <tr style="color: green;" data-row="3-1-2">
+                                <td>1</td>
+                                <td><a href="Βαθμοι/Βαθμολογία-Αρχιτεκτονική-Υπολογιστών-ΙΙ-2025-09-September.pdf">Αρχιτεκτονικη υπολογιστων ΙΙ</a></td>
+                                <td>Δημητρης Γκιζόπουλος</td>
+                                <td>-</td>
+                                <td>8</td>
+                                <td>5</td> 
+                                <td>-</td>
+                                <td>6,5</td>
+                                <td>7</td>
+
+                            </tr>
+
+                            <tr style="color: green;" data-row="3-1-4">
+                                <td>2</td>
+                                <td><a href="Βαθμοι/Πιθανοτητες-βαθμοι -sept25.pdf">Πιθανότητες και στατιστική</a></td>
+                                <td>Αχλιοπτας Δημητρης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>-</td>
+                                <td>7</td>
+                            </tr>
+                        
+                            <tr style="color: green" data-row="3-1-5">
+                                <td>3</td>
+                                <td><a href="Βαθμοι/DyktiaepikoinonionSEPT25.pdf">Δίκτυα Επικοινωνιών Ι</a></td>
+                                <td>Σταυρακάκος Ιωάννης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>5</td>
+                            </tr>
+
+                            <tr style="color: red" data-row="3-1-1">
+                                <td>4</td>
+                                <td>Λειτουργικά Συστήματα </td>
+                                <td>Σταθης χαντζιεφθιμιαδης</td>
+                                <td>-</td>
+                                <td>10/100</td>
+                                <td>0/100</td>
+                                <td>10/100</td>
+                                <td>35/100</td>
+                                <td>2,5</td>
+                            </tr>
+                   
+                            <tr style="color: green;" data-row="3-1-6">
+                                <td>5</td>
+                                <td>Αλγόριθμοι και Πολυπλοκότητα </td>
+                                <td>Γιαννοπούλου Αρχοντια</td>
+                                <td>-</td>
+                                <td>9,1</td>
+                                <td>8,7</td>
+                                <td>10,6</td> 
+                                <td>-</td>
+                                <td>7</td>
+                            </tr>
+
+                    </table>
+                </div><!-- Τελος τμήμα για το 3ο έτος -->
+                
+                <!-- Τμήμα για το 4ο έτος -->
+                <div id="semester-4" class="semester-table ">
+
+                    <h3>2025-2026 χειμερινό εξαμήνου (7ο)</h3>
+                    <table>
+          
+                            <tr>
+                                <td><b>A/A</b></td>
+                                <td><b>Όνομα Μαθήματος</b></td>
+                                <td><b>Όνομα Διδάσκοντα</b></td>
+                                <td><b>1ης εργασίας</b></td>
+                                <td><b>2ης εργασίας</b></td>
+                                <td><b>3ης εργασίας</b></td>
+                                <td><b>Τελικός βαθμός</b></td>
+                            </tr>
+                
+                            <tr style="color: green" data-row="4-1-1">
+                                <td>1</td>
+                                <td><a href="Βαθμοι/Βαθμολογια-διδακτικη-2025.pdf">Διδακτική της Πληροφορικής</a></td>
+                                <td> Γόγουλου Αγορίτσα</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>7</td>
+                            </tr>
+                        
+                        
+                            <tr style="color: green;" data-row="4-1-2">
+                                <td>2</td>
+                                <td><a href="Βαθμοι/Βαθμολιγια ΤΠΕ 2026.pdf">Τεχνολογίες της Πληροφορίας και των Επικοινωνιών (ΤΠΕ) στη Μάθηση</a></td>
+                                <td> Γόγουλου Αγορίτσα</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>-</td>
+                                <td>6</td>
+                            </tr>
+                
+                            <tr style="color: black" data-row="4-1-3">
+                                <td>3</td>
+                                <td>Επικοινωνία Ανθρώπου Μηχανής</td>
+                                <td>Μαρία Ρούσσου</td>
+                               
+                                <td>97</td>
+                                <td>87</td>
+                                <td>-</td>
+                              
+                                <td>-</td>
+                            </tr>
+                            
+                            
+                            <tr style="color: black" data-row="4-1-4">
+                                <td>4</td>
+                                <td>Δίκτυα Επικοινωνιών II  </td>
+                                <td>Κωνσταντίνος Χριστοδουλόπουλος</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                               
+                                <td>-</td>
+                            </tr>
+            
+                            <tr style="color: black;" data-row="4-1-5">
+                                <td>5</td>
+                                <td>Τηλεπικοινωνιακά Δίκτυα </td>
+                                <td>Βαρουτάς Δημήτρης</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                               
+                                <td>-</td> 
+                            </tr>
+                            
+                            <tr style="color: black;" data-row="4-1-6">
+                                <td>6</td>
+                                <td>Συστήματα Κινητών και Προσωπικών Επικοινωνιών</td>
+                                <td>Νίκος Πασσάς</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                           
+                                <td>-</td> 
+                            </tr>
+            
+                            <tr style="color: black;" data-row="4-1-7">
+                                <td>7</td>
+                                <td>Project</td>
+                                <td>Νάνσυ Αλωνιστιώτη</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                        
+                                <td></td> 
+                            </tr>
+                            
+                            <tr style="color: black;" data-row="4-1-8"></tr>
+                                <td>8</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                               
+                                <td>-</td> 
+                            </tr>
+            
+                            <tr style="color: black;" data-row="4-1-9"></tr>
+                                <td>9</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                               
+                                <td>-</td> 
+                            </tr>
+                            
+                            <tr style="color: black;" data-row="4-1-10"></tr>
+                                <td>10</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                             
+                                <td>-</td> 
+                            </tr>
+            
+                    </table>
+
+                    <h3>2025-2026 εαρινό εξαμήνου (8ο)</h3>
+                    <table>
+                            
+                            <tr>
+                                <td><b>A/A</b></td>
+                                <td><b>Όνομα Μαθήματος</b></td>
+                                <td><b>Όνομα Διδάσκοντα</b></td>
+                                <td><b>Βαθμός εργαστηριού</b></td>
+                                <td><b>1ης εργασίας</b></td>
+                                <td><b>2ης εργασίας</b></td>
+                                <td><b>3ης εργασίας</b></td>
+                                <td><b>4ης εργασίας</b></td>
+                                <td><b>Τελικός βαθμός</b></td>
+                            </tr>
+                        
+                            <tr style="color: black" data-row="4-2-1">
+                                <td>1</td>
+                                <td>Σχολική Τάξη & Μικροδιδασκαλία </td>
+                                <td>Γόγουλου Αγορίτσα</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+
+
+                            <tr style="color: black;" data-row="4-2-2">
+                                <td>2</td>
+                                <td>Διαχείριση Δικτύων</td>
+                                <td>Νάνσυ Αλωνιστιώτη</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        
+                            <tr style="color: black" data-row="4-2-3">
+                                <td>3</td>
+                                <td>Ψηφιακές Επικοινωνίες</td>
+                                <td>Νίκος Πασσάς	</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                            </tr>
+
+
+                            <tr style="color: black" data-row="4-2-4">
+                                <td>4</td>
+                                <td>Αρχιτεκτονική Υπολογιστών Ι</td>
+                                <td>Γκιζόπουλος Δημήτριος</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td>
+                            </tr>
+
+                            <tr style="color: black;" data-row="4-2-5">
+                                <td>5</td>
+                                <td>Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική</td>
+                                <td>Τσίπουρας Αριστείδης	</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                            </tr>
+
+                            <tr style="color: black;" data-row="4-2-6">
+                                <td>6</td>
+                                 <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                            </tr>
+                    
+                            <tr style="color: black;" data-row="4-2-7">
+                                <td>7</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                            </tr>
+
+                            <tr style="color: black;" data-row="4-2-8"></tr>
+                                <td>8</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                            </tr>
+
+                            <tr style="color: black;" data-row="4-2-9"></tr>
+                                <td>9</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                            </tr>
+
+                            <tr style="color: black;" data-row="4-2-10"></tr>
+                                <td>10</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td> 
+                                <td>-</td> 
+                            </tr>
+
+                    </table>
+                </div><!-- Τελος τμήμα για το 4ο έτος -->
+
+        </section>
+        
+        <!-- Sidebar με επιπλέον πληροφορίες -->
+        <aside class="sidebar">
+
+        
+            <P style="text-align:center;">📅<b>Ημερομηνία - Ώρα ενημέρωσης 31/1/206 </b> </P>
+
+            <h2>Πληροφορίες - Προοδος</h2>
+            <ul>
+                <li>📚 Περασμένα μαθήματα: 26</li>
+                <li>🎓 ECTS: 155 / 240</li>
+                <li>📊 Μέσος Όρος: 7</li>
+            </ul>
+
+
+        <h3>Γρήγορη Πλοήγηση</h3>
+        <ul>
+            <li><a href="Home.html">Αρχική</a></li>
+            <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
+            <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήματος</a></li>
+            <li><a href="Ptyxio.html">Απαιτήσεις για την Λήψη Πτυχίου</a></li>
+            <li><a href="mathimata.html">Μαθήματα</a></li>
+        </ul>
+
+        <h3>Πρόοδος Πτυχίου</h3>
+        <div class="progress-container" style="width: 80%;">
+            <div class="progress-bar" style="width: 49%;">65%</div>
+        </div>
+
+      </aside>
+
+      </main>
+        
+        <!-- Υποσέλιδο με δικαιώματα -->
+        <footer class="site-footer">
+            <p>© Antony 2025</p>
+        </footer>
+
+        <script src="script.js"></script>
+  </body>
+</html>

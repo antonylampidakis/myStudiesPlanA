@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="el">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myStudiesPlan - DIT</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    
+    <!-- Κεφαλίδα ιστοσελίδας -->
+    <header class="site-header">
+      <h1>myStudiesPlan - DIT</h1>
+    </header>
+    
+    <!-- Κύριο μενού πλοήγησης -->
+    <nav class="site-nav">
+      <ul>
+          <li><a href="Home.html">Αρχική</a></li>
+          <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
+          <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήατος</a></li>
+          <li><a href="Ptyxio.html">Απετήσεις ληψης πτυχίου </a></li>
+          <li><a href="mathimata.html">Μαθήματα </a></li>
+      </ul>
+    </nav>
+    
+    <!-- Κύριο περιεχόμενο της σελίδας -->
+    <main class="content">
+      <section class="main-section">
+
+        <h2>Προσωπικά Στοιχεία</h2>
+        <ul>
+            <li><strong>Ονοματεπώνυμο:</strong> Αντώνιος-Γεώργιος Λαμπιδάκης</li>
+            <li><strong>Αριθμός Μητρώου:</strong> 1115202200088</li>
+            <li><strong>Εξάμηνο Φοίτησης:</strong> 7ο</li>
+            <li><strong>Κατεύθυνση:</strong> Β</li>
+            <li><strong>Μέσος Όρος:</strong> 7</li>
+            <li><strong>Συνολο μαθηματων που εχω παρει :</strong> 27</li>
+        </ul>
+        
+        <!-- Απαιτήσεις για την λήψη πτυχίου -->
+        <h2>Απαιτήσεις για την Λήψη Πτυχίου</h2>
+        <ul>
+            <li><strong>ECTS:</strong> <span id="ects-value">155</span> / 240</li>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+            <li><strong>Πλήθος Περασμένων:</strong> 26</li>
+            <li><strong>Συνολικά Μαθήματα:</strong></li>
+            <ul>
+                <li>Υποχρεωτικά: 15 / 18</li>
+                <li>Project: 0 / 1</li>
+                <li>Υποχρεωτικά Κατεύθυνσης: 0 / 2</li>
+                <li>Βασικά Κατεύθυνσης: 1 / 4</li>
+                <li>Γενικής Παιδείας: 3 / 3</li>
+                <li>Πρακτική Άσκηση Ι & ΙΙ: 0 / 2</li>
+            </ul>
+        </ul>
+
+        <h2>Στατιστικά γραφήματα</h2>
+
+        <!-- Φόρτωση βιβλιοθήκης Google Charts -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawCharts); // Καλούμε και τα δύο γραφήματα
+      
+          function drawCharts() {
+            drawChart1(); // Πρώτο γράφημα
+            drawChart2(); // Δεύτερο γράφημα
+          }
+      
+          function drawChart1() {
+            var data = google.visualization.arrayToDataTable([
+                ['Κατασταση', 'Αριθμος'],
+                ['Περασμένα', 26],
+                ['Κομμένα', 3],
+                ['Χωρίς βαθμό', 0]
+            ]);
+      
+            var options = {
+                title: 'Μαθήματα',
+                width: 500,
+                height: 300
+            };
+      
+            var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+            chart.draw(data, options);
+          }
+      
+          function drawChart2() {
+            var data = google.visualization.arrayToDataTable([
+                ['Βαθμος', 'Αριθμος'],
+                ['0', 0],
+                ['1', 0],
+                ['2', 0],
+                ['3', 0],
+                ['4', 0],
+                ['5', 7],
+                ['6', 4],
+                ['7', 10],
+                ['8', 0],
+                ['9', 2],
+                ['10', 1],
+                
+            ]);
+      
+            var options = {
+                title: 'Βαθμοί',
+                width: 500,
+                height: 300
+            };
+      
+            var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+            chart.draw(data, options);
+          }
+        </script>
+
+        <!-- Εμφάνιση των γραφημάτων -->
+        <div class="charts-container">
+          <div id="piechart1" class="chart"></div>
+          <div id="piechart2" class="chart"></div>
+        </div>
+      
+        <br>
+
+        <div id="columnchart" class="chart2"></div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawColumnChart);
+
+          function drawColumnChart() {
+              var data = google.visualization.arrayToDataTable([
+                  ['Εξαμηνο', 'Βαθμός'],
+                  ['1', 5.6],
+                  ['2', 0],
+                  ['3', 6],
+                  ['4', 6.8],
+                  ['5', 0],
+                  ['6', 8.3],
+                  ['7', 0],
+                  ['8', 0]
+              ]);
+
+              var options = {
+                  title: 'Μέσος Όρος / εξάμηνο',
+                  hAxis: { title: 'Εξάμηνο' },
+                  vAxis: { title: 'Βαθμός ', minValue: 0, maxValue: 10 },
+                  legend: 'none',
+                  colors: ['#4CAF50']
+              };
+
+              var chart = new google.visualization.ColumnChart(document.getElementById('columnchart'));
+              chart.draw(data, options);
+          }
+        </script>
+
+      </section>
+
+      <!-- Sidebar με επιπλέον πληροφορίες -->
+      <aside class="sidebar">
+
+        <P style="text-align:center;">📅<b>Ημερομηνία - Ώρα ενημέρωσης 31/1/2026 </b> </P>
+
+        <h2>Πληροφορίες - Προοδος</h2>
+        <ul>
+            <li>📚 Περασμένα μαθήματα: 26</li>
+            <li>🎓 ECTS: 155 / 240</li>
+            <li>📊 Μέσος Όρος: 7</li>
+        </ul>
+
+        <h3>Γρήγορη Πλοήγηση</h3>
+        <ul>
+            <li><a href="Home.html">Αρχική</a></li>
+            <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
+            <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήματος</a></li>
+            <li><a href="Ptyxio.html">Απαιτήσεις για την Λήψη Πτυχίου</a></li>
+            <li><a href="mathimata.html">Μαθήματα</a></li>
+        </ul>
+
+        <h3>Πρόοδος Πτυχίου</h3>
+        <div class="progress-container" style="width: 80%;">
+            <div class="progress-bar" style="width: 49%;">60%</div>
+        </div>
+
+       
+      </aside>
+    </main>
+    
+    <!-- Υποσέλιδο με δικαιώματα -->
+    <footer class="site-footer">
+      <p>© Antony 2025</p>
+    </footer>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,328 @@
+/* Κατάργηση των περιθωρίων και των padding για το html και το body,
+   διασφαλίζοντας ότι το ύψος καλύπτει όλη την οθόνη */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;           
+  box-sizing: border-box;
+}
+
+/* Εφαρμογή του box-sizing: inherit σε όλα τα στοιχεία, 
+   ώστε να υπολογίζονται σωστά τα περιθώρια και τα paddings */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;    
+}
+
+/* Ορισμός των βασικών χαρακτηριστικών του σώματος της σελίδας */
+body {
+  display: flex;
+  flex-direction: column;  /* Τα στοιχεία να στοιχίζονται κατακόρυφα */
+  min-height: 100%;       /* Το body καλύπτει όλο το ύψος */
+  font-family: sans-serif;
+}
+
+/* Κεφαλίδα */
+.site-header {
+  background-color: #333; /* Χρωμα φόντο */
+  color: #fff;  /* Χρώμα κειμένου */
+  padding: 1rem; /* Εσωτερικό περιθώριο 1rem */
+}
+
+/* Πλοήγηση */
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: #444;
+}
+
+.site-nav li {
+  margin: 0;
+}
+
+.site-nav a {
+  display: block; /* Κάνει όλο τον σύνδεσμο clickable */
+  padding: 1rem;  /* Προσθέτει εσωτερικό padding */
+  color: #fff;   /* Λευκό κείμενο */
+  text-decoration: none; /* Κατάργηση υπογράμμισης */
+}
+
+.site-nav a:hover {
+  background-color: #666;  /* Αλλαγή χρώματος στο hover */
+}
+
+/* Κύριο περιεχόμενο */
+.content {
+  display: flex;        /* Εμφάνιση των εσωτερικών στοιχείων σε σειρά */
+  flex: 1;              /* Το περιεχόμενο να καταλαμβάνει το διαθέσιμο χώρο */
+  gap: 1rem;            /* Απόσταση μεταξύ των εσωτερικών στοιχείων */
+  padding: 1rem;
+  background-color: #f7f7f7; /* Ανοιχτό γκρι φόντο */
+}
+
+/* Κύριο περιεχόμενο */
+.main-section {
+  flex: 3; /* Να καταλαμβάνει μεγαλύτερο μέρος από το sidebar */
+  background-color: #f2f2f2; /* Ανοιχτό γκρι φόντο */
+  padding: 1rem;
+  
+}
+
+/* Πλάγια στήλη */
+.sidebar {
+  flex: 1;       /* Μικρότερη αναλογία από το κύριο περιεχόμενο */
+  background-color: #e2e2e2; /* Ανοιχτότερο γκρι φόντο */
+  padding: 1rem;
+}
+
+/* Υποσέλιδο */
+.site-footer {
+  background-color: #333; /* Ίδιο σκούρο φόντο με την κεφαλίδα */
+  color: #fff; /* Λευκό κείμενο */
+  text-align: center; /* Κεντράρισμα κειμένου */
+  padding: 1rem;
+}
+
+/* Responsive σχεδίαση για μικρότερες οθόνες */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;  /* Τα στοιχεία στοιχίζονται κατακόρυφα */
+  }
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/* Στυλ για τις επικεφαλίδες h2 */
+h2 {
+  color: #333; /* Σκούρο γκρι κείμενο */
+  border-bottom: 2px solid #007bff; /* Γαλάζια διαχωριστική γραμμή */
+  padding-bottom: 5px; /* Απόσταση από το κείμενο */
+}
+
+/* Στυλ για τις επικεφαλίδες h3 */
+h3 {
+  color: #555; /* Γκρι χρώμα κειμένου */
+  text-align: center; /* Κεντράρισμα κειμένου */
+  margin-bottom: 10px; /* Κάτω περιθώριο */
+}
+
+/* Στυλ για τους πίνακες */
+table {
+  border-collapse: collapse; /* Κατάργηση κενών ανάμεσα στα κελιά */
+  text-align: center; /* Κεντράρισμα περιεχομένου */
+}
+
+/* Στυλ για τα κελιά του πίνακα */
+td, th {
+  padding: 8px; /* Εσωτερικό περιθώριο */
+  text-align: left; /* Στοίχιση κειμένου προς τα αριστερά */
+}
+
+/* Στυλ για λίστες */
+ul {
+  list-style-type: none; /* Αφαίρεση bullets */
+  padding: 0;
+}
+
+/* Στυλ για στοιχεία της λίστας */
+ul li {
+  padding: 8px 0;
+  font-size: 16px; /* Μέγεθος γραμματοσειράς */
+}
+
+/* Στυλ για υπολίστες */
+ul ul {
+  padding-left: 20px; /* Εσοχή */
+}
+
+/* Στυλ για τα στοιχεία των υπολιστών */
+ul ul li {
+  font-size: 14px;
+  color: #555; /* Γκρι χρώμα */
+}
+
+/* Απόκρυψη στοιχείων με την κλάση "hidden" */
+.hidden {
+  display: none;
+}
+
+/* Στυλ για το section με τα κουμπιά */
+.buttons {
+  margin-bottom: 20px; /* Περιθώριο στο κάτω μέρος */
+}
+
+/* Στυλ για τα κουμπιά */
+.buttons button {
+  padding: 10px 15px; /* Εσωτερικά περιθώρια */
+  border: none; /* Κατάργηση περιγράμματος */
+  background: #333; /* Σκούρο γκρι φόντο */
+  color: white; /* Λευκό κείμενο */
+  cursor: pointer; /* Δείκτης ποντικιού σε μορφή χεριού */
+  margin: 5px; /* Περιθώριο μεταξύ κουμπιών */
+}
+
+/* Ενεργό κουμπί */
+.buttons button.active {
+  background: #555; /* Ελαφρώς πιο φωτεινό γκρι */
+}
+
+/* Στοίχιση των δεδομένων στις στήλες 3 & 4 στο κέντρο */
+td:nth-child(3), th:nth-child(3),
+td:nth-child(4), th:nth-child(4) {
+    text-align: center;
+}
+
+/* Κεντράρισμα πίνακα μέσα σε δομή "semester-table" */
+.semester-table {
+  text-align: center;
+}
+
+.semester-table table {
+  margin: auto; /* Κεντράρει τον πίνακα */
+}
+
+/* Στυλ για το container που περιέχει εικόνα και κείμενο */
+.container {
+  display: flex; /* Εμφάνιση flexbox για στοίχιση */
+  align-items: center; /* Κάθετη στοίχιση στο κέντρο */
+  justify-content: center; /* Οριζόντια στοίχιση στο κέντρο */
+  gap: 20px; /* Απόσταση μεταξύ εικόνας & κειμένου */
+  max-width: 800px; /* Ορίζει το μέγιστο πλάτος */
+  margin: auto; /* Κεντράρει το container */
+}
+
+/* Στυλ για την εικόνα */
+.container img {
+  width: 300px; /* Προσαρμογή μεγέθους εικόνας */
+  border-radius: 10px; /* Προαιρετικό: στρογγυλεμένες γωνίες */
+}
+
+/* Στυλ για το κείμενο μέσα στο container */
+.text {
+  max-width: 400px;
+  font-size: 18px; /* Μέγεθος γραμματοσειράς */
+  line-height: 1.6; /* Απόσταση μεταξύ γραμμών */
+}
+
+/* Στυλ για το container της μπάρας προόδου */
+.progress-container {
+  width: 30%; /* Ορίζει το πλάτος */
+  background-color: #747474; /* Σκούρο γκρι */
+  border-radius: 5px; /* Στρογγυλεμένες άκρες */
+  overflow: hidden; /* Απόκρυψη περιττού περιεχομένου */
+  margin: 8px 0; /* Περιθώριο πάνω-κάτω */
+  height: 20px; /* Ύψος */
+}
+
+/* Στυλ για τη μπάρα προόδου */
+.progress-bar {
+  height: 100%;
+  width: 0%; /* Ξεκινάει από το 0% και αναπτύσσεται */
+  background-color: #5dee40; /* Πράσινο φόντο */
+  text-align: center;
+  line-height: 20px; /* Κεντράρισμα κειμένου κάθετα */
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: width 0.5s ease-in-out; /* Ομαλή μετάβαση */
+}
+
+/* Container για τα γραφήματα */
+.charts-container {
+  display: flex;
+  justify-content: center; /* Κεντράρισμα οριζόντια */
+  align-items: center; /* Ευθυγράμμιση κάθετα */
+  gap: 20px; /* Απόσταση μεταξύ των γραφημάτων */
+}
+
+/* Στυλ για το γράφημα */
+.chart {
+  width: 500px; 
+  height: 300px;
+}
+
+/* Στυλ για ένα μεγαλύτερο γράφημα */
+.chart2 {
+  width: 1000px;
+  height: 400px;
+  margin: auto;
+}
+
+/* Στυλ για το grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 στήλες */
+  gap: 20px; /* Απόσταση μεταξύ των στοιχείων */
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Στυλ για τα κουτιά μαθημάτων */
+.course {
+  background-color: #e6f7ff; /* Ανοιχτό μπλε φόντο */
+  padding: 20px;
+  border-radius: 10px; /* Στρογγυλεμένες γωνίες */
+  cursor: pointer; /* Δείκτης σε μορφή χεριού */
+  transition: transform 0.2s; /* Ομαλή κίνηση */
+  text-align: center;
+}
+
+/* Εφέ zoom-in όταν περνάει το ποντίκι πάνω από το στοιχείο */
+.course:hover {
+  transform: scale(1.05);
+}
+
+/* Απόκρυψη στοιχείων */
+.hidden {
+  display: none;
+}
+
+/* Στυλ για το κουτί πληροφοριών */
+#info-box {
+  position: fixed; /* Σταθερή θέση στην οθόνη */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Κεντράρισμα */
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray; /* Σκιά */
+  text-align: left;
+  width: 400px;
+}
+
+/* Στυλ για τον τίτλο στο info-box */
+#info-box h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Στυλ για το κείμενο στο info-box */
+#info-box p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+/* Στυλ για το σύνδεσμο των μαθημάτων */
+#course-link a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Εφέ hover στον σύνδεσμο */
+#course-link a:hover {
+  text-decoration: underline;
+}
+
+/* Στυλ για το κουμπί κλεισίματος */
+.close {
+  cursor: pointer;
+  font-size: 20px;
+  float: right;
+}
+
