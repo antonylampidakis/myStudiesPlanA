@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", function() {
     
     // Ορισμός τρέχοντος αριθμού ECTS (τα μονάδες που έχει περάσει ο φοιτητής)
-    let currentECTS = 155; // Βάλε εδώ τα τωρινά ECTS που έχεις
+    let currentECTS = 161; // Βάλε εδώ τα τωρινά ECTS που έχεις
     let totalECTS = 240; // Συνολικός αριθμός ECTS που απαιτούνται για το πτυχίο
     
     // Υπολογισμός ποσοστού ολοκλήρωσης πτυχίου
