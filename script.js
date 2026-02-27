@@ -27,19 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // Ορισμός τρέχοντος αριθμού ECTS (τα μονάδες που έχει περάσει ο φοιτητής)
-    let currentECTS = 161; // Βάλε εδώ τα τωρινά ECTS που έχεις
-    let totalECTS = 240; // Συνολικός αριθμός ECTS που απαιτούνται για το πτυχίο
-    
-    // Υπολογισμός ποσοστού ολοκλήρωσης πτυχίου
-    let percentage = (currentECTS / totalECTS) * 100;
-    
-    // Ενημέρωση του progress bar με το ποσοστό που υπολογίστηκε
-    document.getElementById("progress-bar").style.width = percentage + "%";
-    document.getElementById("progress-bar").textContent = Math.round(percentage) + "%";
-});
+
 
 //Πληροφροριες για το καθε μαθημα 
 const courses = {
@@ -312,4 +300,53 @@ function hideInfo() {
 
     // Προσθήκη της κλάσης "hidden" για να εξαφανιστεί το παράθυρο πληροφοριών
     document.getElementById("info-box").classList.add("hidden");
+}
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const slot = document.getElementById("sidebar-slot");
+  if (!slot) return;
+
+  try {
+    const res = await fetch("sidebar.html", { cache: "no-store" });
+    if (!res.ok) throw new Error("Failed to load sidebar.html");
+    slot.innerHTML = await res.text();
+    updateProgressBarFromECTS();
+
+    // Προαιρετικό: highlight το active link στο sidebar
+    const current = location.pathname.split("/").pop() || "index.html";
+    slot.querySelectorAll("a[href]").forEach(a => {
+      if (a.getAttribute("href") === current) a.classList.add("active-link");
+    });
+
+  } catch (e) {
+    console.error(e);
+    slot.innerHTML = "<!-- Sidebar failed to load -->";
+  }
+});
+
+function updateProgressBarFromECTS() {
+  const ectsEl = document.getElementById("ects-text");
+  const bar = document.getElementById("progress-bar");
+
+  if (!ectsEl || !bar) return;
+
+  // Παίρνουμε το κείμενο π.χ. "🎓 ECTS: 161/ 240"
+  const text = ectsEl.textContent;
+
+  // Βρίσκουμε current/total με regex
+  const match = text.match(/(\d+)\s*\/\s*(\d+)/);
+  if (!match) return;
+
+  const current = parseInt(match[1], 10);
+  const total = parseInt(match[2], 10);
+
+  if (!Number.isFinite(current) || !Number.isFinite(total) || total <= 0) return;
+
+  let percentage = (current / total) * 100;
+
+  // clamp 0..100
+  percentage = Math.max(0, Math.min(100, percentage));
+
+  bar.style.width = percentage + "%";
+  bar.textContent = Math.round(percentage) + "%";
 }
