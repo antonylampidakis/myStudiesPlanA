@@ -239,7 +239,7 @@ const courses = {
      "math35": {
         title: "Σχολική Τάξη & Μικροδιδασκαλία",
         professor: " Μαρία Γρηγοριάδου",
-        grades: [], 
+        grades: [8], 
         link: "https://eclass.uoa.gr/courses/"
     },
      "math36": {
