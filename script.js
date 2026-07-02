@@ -251,7 +251,7 @@ const courses = {
      "math37": {
         title: "Ψηφιακές Επικοινωνίες",
         professor: " ",
-        grades: [], 
+        grades: [8.5], 
         link: "https://eclass.uoa.gr/courses/"
     },
      "math38": {
