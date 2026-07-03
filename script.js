@@ -82,7 +82,7 @@ const courses = {
     "math9": {
         title: "Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική",
         professor: "Α.Τσίπουρας",
-        grades: [0], 
+        grades: [0,7], 
         link: "https://eclass.uoa.gr/courses/D17/"
     },
     "math10": {
