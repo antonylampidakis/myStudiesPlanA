@@ -46,37 +46,11 @@ function createId() {
 }
 
 function defaultData() {
-  
-
-  const grades = [
-    { id: createId(), courseId: courses[0].id, year: '1ο Έτος', table: 'Πίνακας Α', finalGrade: 7, updatedAt: Date.now() - 500000 },
-    { id: createId(), courseId: courses[1].id, year: '1ο Έτος', table: 'Πίνακας Α', finalGrade: 8, updatedAt: Date.now() - 400000 },
-    { id: createId(), courseId: courses[2].id, year: '1ο Έτος', table: 'Πίνακας Β', finalGrade: 6, updatedAt: Date.now() - 300000 },
-    { id: createId(), courseId: courses[4].id, year: '2ο Έτος', table: 'Πίνακας Β', finalGrade: 8, updatedAt: Date.now() - 200000 },
-    { id: createId(), courseId: courses[5].id, year: '3ο Έτος', table: 'Πίνακας Α', finalGrade: 4, updatedAt: Date.now() - 100000 },
-    { id: createId(), courseId: courses[6].id, year: '4ο Έτος', table: 'Πίνακας Α', finalGrade: 9, updatedAt: Date.now() - 50000 }
-  ];
-
-  const examGrades = [
-    {
-      id: createId(), courseId: courses[0].id, year: '1ο Έτος', exam: 'Χειμερινή', period: '2025-2026', finalGrade: 7,
-      extraFields: [
-        { id: createId(), title: 'Εργασία 1', grade: 8, weight: 30 },
-        { id: createId(), title: 'Τελική εξέταση', grade: 6.5, weight: 70 }
-      ],
-      notes: 'Περασμένο', updatedAt: Date.now() - 450000
-    },
-    {
-      id: createId(), courseId: courses[4].id, year: '2ο Έτος', exam: 'Εαρινή', period: '2025-2026', finalGrade: 8,
-      extraFields: [
-        { id: createId(), title: 'Project', grade: 9, weight: 40 },
-        { id: createId(), title: 'Τελική εξέταση', grade: 7.5, weight: 60 }
-      ],
-      notes: '', updatedAt: Date.now() - 250000
-    }
-  ];
-
-  return { courses, grades, examGrades };
+  return {
+    courses: [],
+    grades: [],
+    examGrades: []
+  };
 }
 
 function loadData() {
