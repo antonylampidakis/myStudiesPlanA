@@ -1,1 +1,2 @@
 # myStudiesPlanA
+VERSION1
