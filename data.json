@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "created": "2026-07-04T19:51:47.966Z",
+  "data": {
+    "courses": [
+      {
+        "id": "id_mr6kr3ji_qlbq8o",
+        "name": "Γραμμική Άλγεβρα",
+        "professor": "-",
+        "ects": 6,
+        "semester": 1,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6kr3ji_4zz9pq",
+        "name": "Διακριτά Μαθηματικά",
+        "professor": "-",
+        "ects": 7,
+        "semester": 1,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6kr3ji_5d6bpx",
+        "name": "Ανάλυση Ι",
+        "professor": "-",
+        "ects": 8,
+        "semester": 2,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lqld9_v2z6ns",
+        "name": "Εισαγωγή στην Πληροφορική και στις Τηλεπικοινωνίες",
+        "professor": "-",
+        "ects": 2,
+        "semester": 1,
+        "year": "1ο Έτος",
+        "type": "Γενικής Παιδείας"
+      },
+      {
+        "id": "id_mr6lqx50_a1jodn",
+        "name": "Εισαγωγή στον Προγραμματισμό",
+        "professor": "-",
+        "ects": 7,
+        "semester": 1,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lr6kb_v6f8v9",
+        "name": "Λογική Σχεδίαση",
+        "professor": "-",
+        "ects": 6,
+        "semester": 1,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lrzsy_c66plz",
+        "name": "Αρχιτεκτονική Υπολογιστών Ι",
+        "professor": "-",
+        "ects": 7,
+        "semester": 2,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lsa2g_xvrn6b",
+        "name": "Δομές Δεδομένων και Τεχνικές Προγραμματισμού",
+        "professor": "-",
+        "ects": 7,
+        "semester": 2,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lslt6_g91j0d",
+        "name": "Ηλεκτρομαγνητισμός – Οπτική και Σύγχρονη Φυσική",
+        "professor": "-",
+        "ects": 8,
+        "semester": 2,
+        "year": "1ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lt11x_2iv540",
+        "name": "Ανάλυση ΙΙ",
+        "professor": "-",
+        "ects": 8,
+        "semester": 3,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6luh1q_z52mpn",
+        "name": "Αντικειμενοστραφής Προγραμματισμός",
+        "professor": "-",
+        "ects": 8,
+        "semester": 3,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lux3t_gqrxfn",
+        "name": "Πιθανότητες και Στατιστική",
+        "professor": "-",
+        "ects": 6,
+        "semester": 3,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lv7ux_alg1hf",
+        "name": "Σήματα και Συστήματα",
+        "professor": "-",
+        "ects": 6,
+        "semester": 3,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lvigr_cp7klx",
+        "name": "Αλγόριθμοι και Πολυπλοκότητα",
+        "professor": "-",
+        "ects": 8,
+        "semester": 4,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lvs9q_hj5igv",
+        "name": "Δίκτυα Επικοινωνιών I",
+        "professor": "-",
+        "ects": 6,
+        "semester": 4,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lw51d_o7szm9",
+        "name": "Εργαστήριο Δικτύων Επικοινωνιών Ι",
+        "professor": "-",
+        "ects": 2,
+        "semester": 4,
+        "year": "2ο Έτος",
+        "type": "Αυτοτελή Προαιρετικά Εργαστήρια "
+      },
+      {
+        "id": "id_mr6lwjsx_c2kcv5",
+        "name": "Συστήματα Επικοινωνιών",
+        "professor": "-",
+        "ects": 7,
+        "semester": 4,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lx8by_1cuwbn",
+        "name": "Σχεδίαση και Χρήση Βάσεων Δεδομένων",
+        "professor": "-",
+        "ects": 7,
+        "semester": 4,
+        "year": "2ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lyhlp_zoolci",
+        "name": "Λειτουργικά Συστήματα",
+        "professor": "-",
+        "ects": 8,
+        "semester": 5,
+        "year": "3ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6lzazb_4u59la",
+        "name": "Παραληλα Συστήματα",
+        "professor": "-",
+        "ects": 6,
+        "semester": 5,
+        "year": "3ο Έτος",
+        "type": "Επιλογής"
+      },
+      {
+        "id": "id_mr6lzowv_gyonin",
+        "name": "Δομη και θεσμοι της ευρωπαικης ενωσης",
+        "professor": "-",
+        "ects": 2,
+        "semester": 5,
+        "year": "3ο Έτος",
+        "type": "Γενικής Παιδείας"
+      },
+      {
+        "id": "id_mr6m07y4_w64q9q",
+        "name": "Αρχιτεκτονική Υπολογιστών ΙΙ",
+        "professor": "-",
+        "ects": 6,
+        "semester": 5,
+        "year": "3ο Έτος",
+        "type": "Υποχρεωτικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6m0oe6_12ovr6",
+        "name": "Υλοποίηση Συστημάτων Βάσεων Δεδομένων",
+        "professor": "-",
+        "ects": 6,
+        "semester": 5,
+        "year": "3ο Έτος",
+        "type": "Επιλογής"
+      },
+      {
+        "id": "id_mr6m17o8_0sonj5",
+        "name": "Ψυφιακη προσβασημοτητα και υποστηρικτικες τεχνολογιες πληροφορικης",
+        "professor": "-",
+        "ects": 6,
+        "semester": 5,
+        "year": "3ο Έτος",
+        "type": "ΠΔΕ"
+      },
+      {
+        "id": "id_mr6m1p9i_60v6jm",
+        "name": "Προγραμματισμός Συστήματος",
+        "professor": "-",
+        "ects": 8,
+        "semester": 6,
+        "year": "3ο Έτος",
+        "type": "Υποχρεωτικό"
+      },
+      {
+        "id": "id_mr6m25yj_3wjgk9",
+        "name": "Τεχνολογίες Εφαρμογών Διαδικτύου",
+        "professor": "-",
+        "ects": 6,
+        "semester": 6,
+        "year": "3ο Έτος",
+        "type": "Βασικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6m2i0v_9gvej0",
+        "name": "Διοίκηση Έργων και Τεχνικές Παρουσίασης και Συγγραφής Επιστημονικών Εκθέσεων",
+        "professor": "-",
+        "ects": 2,
+        "semester": 6,
+        "year": "3ο Έτος",
+        "type": "Γενικής Παιδείας"
+      },
+      {
+        "id": "id_mr6m5dd7_qikvqz",
+        "name": "Διδακτική της Πληροφορικής",
+        "professor": "-",
+        "ects": 6,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "ΠΔΕ"
+      },
+      {
+        "id": "id_mr6m5o7f_hufu2q",
+        "name": "Τεχνολογίες της Πληροφορίας και των Επικοινωνιών (ΤΠΕ) στη Μάθηση",
+        "professor": "-",
+        "ects": 6,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "ΠΔΕ"
+      },
+      {
+        "id": "id_mr6m5zwf_gzz71y",
+        "name": "Επικοινωνία Ανθρώπου Μηχανής",
+        "professor": "-",
+        "ects": 6,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "ΠΔΕ"
+      },
+      {
+        "id": "id_mr6m6h6a_kdxzaw",
+        "name": "Δίκτυα Επικοινωνιών II",
+        "professor": "-",
+        "ects": 6,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "Υποχρεωτικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6m6wbk_am31vh",
+        "name": "Τηλεπικοινωνιακά Δίκτυα",
+        "professor": "-",
+        "ects": 6,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "Βασικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6m7f33_gftlot",
+        "name": "Συστήματα Κινητών και Προσωπικών Επικοινωνιών",
+        "professor": "-",
+        "ects": 6,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "Βασικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6m7x80_978h49",
+        "name": "Project",
+        "professor": "-",
+        "ects": 8,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "Project"
+      },
+      {
+        "id": "id_mr6m87bm_s0vaym",
+        "name": "Σχολική Τάξη & Μικροδιδασκαλία",
+        "professor": "-",
+        "ects": 6,
+        "semester": 8,
+        "year": "4ο Έτος",
+        "type": "ΠΔΕ"
+      },
+      {
+        "id": "id_mr6m8tbw_l8s55a",
+        "name": "Ηλεκτρονική",
+        "professor": "-",
+        "ects": 6,
+        "semester": 8,
+        "year": "4ο Έτος",
+        "type": "Υποχρεωτικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6m9bv8_fbnqzh",
+        "name": "Ψηφιακές Επικοινωνίες",
+        "professor": "-",
+        "ects": 6,
+        "semester": 8,
+        "year": "4ο Έτος",
+        "type": "Βασικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6ma4uq_y0jewv",
+        "name": "Πολυμέσα και Ασύρματη Δικτύωση",
+        "professor": "-",
+        "ects": 4,
+        "semester": 8,
+        "year": "4ο Έτος",
+        "type": "Επιλογής"
+      },
+      {
+        "id": "id_mr6mb2gs_imqusi",
+        "name": "Θεωρία Πληροφορίας και Κωδίκων",
+        "professor": "-",
+        "ects": 6,
+        "semester": 8,
+        "year": "4ο Έτος",
+        "type": "Υποχρεωτικό Κατεύθυνσης"
+      },
+      {
+        "id": "id_mr6mcilw_uv4en2",
+        "name": "ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ Ι",
+        "professor": "-",
+        "ects": 8,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "Πρακτική Άσκηση"
+      },
+      {
+        "id": "id_mr6mcwfh_pjl4gy",
+        "name": "ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ ΙΙ",
+        "professor": "-",
+        "ects": 8,
+        "semester": 7,
+        "year": "4ο Έτος",
+        "type": "Πρακτική Άσκηση"
+      }
+    ],
+    "grades": [
+      {
+        "id": "id_mr6lpgmi_piboly",
+        "courseId": "id_mr6kr3ji_qlbq8o",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 5,
+        "updatedAt": 1783184658008
+      },
+      {
+        "id": "id_mr6lq4ji_654ixd",
+        "courseId": "id_mr6kr3ji_4zz9pq",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 6,
+        "updatedAt": 1783184663902
+      },
+      {
+        "id": "id_mr6lqlda_vhzen6",
+        "courseId": "id_mr6lqld9_v2z6ns",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7,
+        "updatedAt": 1783184042926
+      },
+      {
+        "id": "id_mr6lqx50_cg8hzj",
+        "courseId": "id_mr6lqx50_a1jodn",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 5,
+        "updatedAt": 1783184058180
+      },
+      {
+        "id": "id_mr6lr6kb_39vk8q",
+        "courseId": "id_mr6lr6kb_v6f8v9",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 5,
+        "updatedAt": 1783184070395
+      },
+      {
+        "id": "id_mr6lrnq0_xpmku7",
+        "courseId": "id_mr6kr3ji_5d6bpx",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 10,
+        "updatedAt": 1783186679734
+      },
+      {
+        "id": "id_mr6lrzsy_b8f5u3",
+        "courseId": "id_mr6lrzsy_c66plz",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 0,
+        "updatedAt": 1783190851566
+      },
+      {
+        "id": "id_mr6lsa2g_7a8dmd",
+        "courseId": "id_mr6lsa2g_xvrn6b",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 6,
+        "updatedAt": 1783186687565
+      },
+      {
+        "id": "id_mr6lslt6_zpg7bt",
+        "courseId": "id_mr6lslt6_g91j0d",
+        "year": "1ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 7,
+        "updatedAt": 1783186690662
+      },
+      {
+        "id": "id_mr6lt11x_pcyq8b",
+        "courseId": "id_mr6lt11x_2iv540",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 6,
+        "updatedAt": 1783184156565
+      },
+      {
+        "id": "id_mr6luh1q_qe7684",
+        "courseId": "id_mr6luh1q_z52mpn",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 6,
+        "updatedAt": 1783184223950
+      },
+      {
+        "id": "id_mr6lux3t_a1c4og",
+        "courseId": "id_mr6lux3t_gqrxfn",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7,
+        "updatedAt": 1783184244761
+      },
+      {
+        "id": "id_mr6lv7ux_1hhx78",
+        "courseId": "id_mr6lv7ux_alg1hf",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 5,
+        "updatedAt": 1783184258697
+      },
+      {
+        "id": "id_mr6lvigr_b92wpu",
+        "courseId": "id_mr6lvigr_cp7klx",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 7,
+        "updatedAt": 1783186893765
+      },
+      {
+        "id": "id_mr6lvs9q_al7ce2",
+        "courseId": "id_mr6lvs9q_hj5igv",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 5,
+        "updatedAt": 1783186909588
+      },
+      {
+        "id": "id_mr6lw51d_90es13",
+        "courseId": "id_mr6lw51d_o7szm9",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 8,
+        "updatedAt": 1783187167487
+      },
+      {
+        "id": "id_mr6lwjsx_yqhk5h",
+        "courseId": "id_mr6lwjsx_c2kcv5",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 7,
+        "updatedAt": 1783186941157
+      },
+      {
+        "id": "id_mr6lx8by_hj4h7q",
+        "courseId": "id_mr6lx8by_1cuwbn",
+        "year": "2ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 7,
+        "updatedAt": 1783186946494
+      },
+      {
+        "id": "id_mr6lyhlp_fy1chz",
+        "courseId": "id_mr6lyhlp_zoolci",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 0,
+        "updatedAt": 1783184411293
+      },
+      {
+        "id": "id_mr6lzazb_sk3un1",
+        "courseId": "id_mr6lzazb_4u59la",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 5,
+        "updatedAt": 1783184449367
+      },
+      {
+        "id": "id_mr6lzowv_fx03fd",
+        "courseId": "id_mr6lzowv_gyonin",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 9,
+        "updatedAt": 1783184467423
+      },
+      {
+        "id": "id_mr6m07y4_x81tt7",
+        "courseId": "id_mr6m07y4_w64q9q",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7,
+        "updatedAt": 1783184492092
+      },
+      {
+        "id": "id_mr6m0oe6_2l0cqj",
+        "courseId": "id_mr6m0oe6_12ovr6",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7,
+        "updatedAt": 1783184513406
+      },
+      {
+        "id": "id_mr6m17o8_e033y5",
+        "courseId": "id_mr6m17o8_0sonj5",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 6,
+        "updatedAt": 1783184647743
+      },
+      {
+        "id": "id_mr6m1p9i_21335u",
+        "courseId": "id_mr6m1p9i_60v6jm",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 9,
+        "updatedAt": 1783186957354
+      },
+      {
+        "id": "id_mr6m25yj_8boxhd",
+        "courseId": "id_mr6m25yj_3wjgk9",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 9,
+        "updatedAt": 1783186964448
+      },
+      {
+        "id": "id_mr6m2i0v_yp0tbc",
+        "courseId": "id_mr6m2i0v_9gvej0",
+        "year": "3ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 7,
+        "updatedAt": 1783186971211
+      },
+      {
+        "id": "id_mr6m5dd7_907zjj",
+        "courseId": "id_mr6m5dd7_qikvqz",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7,
+        "updatedAt": 1783184732395
+      },
+      {
+        "id": "id_mr6m5o7f_hesfr0",
+        "courseId": "id_mr6m5o7f_hufu2q",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 6,
+        "updatedAt": 1783184746443
+      },
+      {
+        "id": "id_mr6m5zwf_nov4ao",
+        "courseId": "id_mr6m5zwf_gzz71y",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 9,
+        "updatedAt": 1783184761599
+      },
+      {
+        "id": "id_mr6m6h6a_1gs1kl",
+        "courseId": "id_mr6m6h6a_kdxzaw",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7.5,
+        "updatedAt": 1783184783986
+      },
+      {
+        "id": "id_mr6m6wbk_yxm9qi",
+        "courseId": "id_mr6m6wbk_am31vh",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 6,
+        "updatedAt": 1783184803616
+      },
+      {
+        "id": "id_mr6m7f33_fexmxx",
+        "courseId": "id_mr6m7f33_gftlot",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 8.5,
+        "updatedAt": 1783184827935
+      },
+      {
+        "id": "id_mr6m7x80_mlf517",
+        "courseId": "id_mr6m7x80_978h49",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 7.6,
+        "updatedAt": 1783184851440
+      },
+      {
+        "id": "id_mr6m87bm_pocv8w",
+        "courseId": "id_mr6m87bm_s0vaym",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 8,
+        "updatedAt": 1783187332754
+      },
+      {
+        "id": "id_mr6m8tbw_16sddj",
+        "courseId": "id_mr6m8tbw_l8s55a",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 0,
+        "updatedAt": 1783186995206
+      },
+      {
+        "id": "id_mr6m9bv8_j6z8yy",
+        "courseId": "id_mr6m9bv8_fbnqzh",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 8.5,
+        "updatedAt": 1783187002757
+      },
+      {
+        "id": "id_mr6ma4uq_qqagx0",
+        "courseId": "id_mr6ma4uq_y0jewv",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 8,
+        "updatedAt": 1783187008747
+      },
+      {
+        "id": "id_mr6mb2gs_7svkoe",
+        "courseId": "id_mr6mb2gs_imqusi",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 0,
+        "updatedAt": 1783187014424
+      },
+      {
+        "id": "id_mr6mcilw_0m2pfy",
+        "courseId": "id_mr6mcilw_uv4en2",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Α",
+        "finalGrade": 0,
+        "updatedAt": 1783190802719
+      },
+      {
+        "id": "id_mr6mcwfh_fub6l7",
+        "courseId": "id_mr6mcwfh_pjl4gy",
+        "year": "4ο Έτος",
+        "table": "Πίνακας Β",
+        "finalGrade": 0,
+        "updatedAt": 1783190794418
+      }
+    ],
+    "examGrades": [
+      {
+        "id": "id_mr6o3tfe_ps6m4k",
+        "courseId": "id_mr6kr3ji_qlbq8o",
+        "year": "1ο Έτος",
+        "exam": "Χειμερινή",
+        "period": "2022-2023",
+        "finalGrade": 1,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6o3tfe_0zhyxt",
+            "title": "Τελική εξέταση",
+            "grade": 1,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188019130
+      },
+      {
+        "id": "id_mr6o464h_rmjp2x",
+        "courseId": "id_mr6kr3ji_4zz9pq",
+        "year": "1ο Έτος",
+        "exam": "Χειμερινή",
+        "period": "2022-2023",
+        "finalGrade": 2,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6o464h_0hnagu",
+            "title": "Τελική εξέταση",
+            "grade": 2,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188035585
+      },
+      {
+        "id": "id_mr6o4hbm_2xcs2z",
+        "courseId": "id_mr6lqld9_v2z6ns",
+        "year": "1ο Έτος",
+        "exam": "Χειμερινή",
+        "period": "2022-2023",
+        "finalGrade": 7,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6o4hbm_9gerw1",
+            "title": "Τελική εξέταση",
+            "grade": 7,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188050098
+      },
+      {
+        "id": "id_mr6oc0fn_8ffjpw",
+        "courseId": "id_mr6lqx50_a1jodn",
+        "year": "1ο Έτος",
+        "exam": "Χειμερινή",
+        "period": "2022-2023",
+        "finalGrade": 4,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6oc0fn_cjbzv1",
+            "title": "Βαθμός εργαστηριού",
+            "grade": 12,
+            "weight": 20
+          },
+          {
+            "id": "id_mr6oc0fn_r4ovpm",
+            "title": "1η εργασία",
+            "grade": 73,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6oc0fn_1i46vo",
+            "title": "2η εργασία",
+            "grade": 98,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6oc0fn_8r7bjg",
+            "title": "3η εργασία",
+            "grade": 95,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6oc0fn_jwd4d2",
+            "title": "4η εργασία",
+            "grade": 0,
+            "weight": 0
+          }
+        ],
+        "updatedAt": 1783188401459
+      },
+      {
+        "id": "id_mr6oci9k_mxxtl9",
+        "courseId": "id_mr6lr6kb_v6f8v9",
+        "year": "1ο Έτος",
+        "exam": "Χειμερινή",
+        "period": "2022-2023",
+        "finalGrade": 0,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6oci9k_e236bc",
+            "title": "Τελική εξέταση",
+            "grade": 0,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188424568
+      },
+      {
+        "id": "id_mr6ocxiv_l44von",
+        "courseId": "id_mr6kr3ji_5d6bpx",
+        "year": "1ο Έτος",
+        "exam": "Εαρινή",
+        "period": "2022-2023",
+        "finalGrade": 1,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6od49g_mx0xsc",
+            "title": "Τελική εξέταση",
+            "grade": 1,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188453077
+      },
+      {
+        "id": "id_mr6odxmy_jzhnr3",
+        "courseId": "id_mr6lrzsy_c66plz",
+        "year": "1ο Έτος",
+        "exam": "Εαρινή",
+        "period": "2022-2023",
+        "finalGrade": 5,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6odxmy_4bveok",
+            "title": "Τελική εξέταση",
+            "grade": 7,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6odxmy_b9kuwv",
+            "title": "Βαθμός εργαστηριού",
+            "grade": 1,
+            "weight": 0
+          }
+        ],
+        "updatedAt": 1783188491146
+      },
+      {
+        "id": "id_mr6of9sg_njnez3",
+        "courseId": "id_mr6lsa2g_xvrn6b",
+        "year": "1ο Έτος",
+        "exam": "Εαρινή",
+        "period": "2022-2023",
+        "finalGrade": 3,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6of9sg_doa7er",
+            "title": "Βαθμός εργαστηριού",
+            "grade": 1.2,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6of9sg_ewh6ii",
+            "title": "1η εργασία",
+            "grade": 0,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6of9sg_6ie0n6",
+            "title": "2η εργασία",
+            "grade": 0,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6of9sg_rcfos2",
+            "title": "3η εργασία",
+            "grade": 0,
+            "weight": 0
+          },
+          {
+            "id": "id_mr6of9sg_ym9jq3",
+            "title": "4η εργασία",
+            "grade": 0,
+            "weight": 0
+          }
+        ],
+        "updatedAt": 1783188553552
+      },
+      {
+        "id": "id_mr6ofnez_tuchba",
+        "courseId": "id_mr6lslt6_g91j0d",
+        "year": "1ο Έτος",
+        "exam": "Εαρινή",
+        "period": "2022-2023",
+        "finalGrade": 0,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6ofnez_xkncnw",
+            "title": "Τελική εξέταση",
+            "grade": 0,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188571211
+      },
+      {
+        "id": "id_mr6og193_waqvwf",
+        "courseId": "id_mr6kr3ji_5d6bpx",
+        "year": "1ο Έτος",
+        "exam": "Σεπτεμβρίου",
+        "period": "2022-2023",
+        "finalGrade": 3,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6ogkql_kw6njw",
+            "title": "Τελική εξέταση",
+            "grade": 3,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188614397
+      },
+      {
+        "id": "id_mr6ogcmt_83o8hd",
+        "courseId": "id_mr6lsa2g_xvrn6b",
+        "year": "1ο Έτος",
+        "exam": "Σεπτεμβρίου",
+        "period": "2022-2023",
+        "finalGrade": 3,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6ogotc_gewbjt",
+            "title": "Τελική εξέταση",
+            "grade": 3,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188619680
+      },
+      {
+        "id": "id_mr6ogxne_tbp7ec",
+        "courseId": "id_mr6kr3ji_qlbq8o",
+        "year": "1ο Έτος",
+        "exam": "Σεπτεμβρίου",
+        "period": "2022-2023",
+        "finalGrade": 1,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6ogxne_ih8cx1",
+            "title": "Τελική εξέταση",
+            "grade": 1,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188631130
+      },
+      {
+        "id": "id_mr6oh7gi_g5rxq4",
+        "courseId": "id_mr6lqx50_a1jodn",
+        "year": "1ο Έτος",
+        "exam": "Σεπτεμβρίου",
+        "period": "2022-2023",
+        "finalGrade": 3,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6oh7gi_ws221u",
+            "title": "Τελική εξέταση",
+            "grade": 3,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188643842
+      },
+      {
+        "id": "id_mr6oht3m_wud3o7",
+        "courseId": "id_mr6lr6kb_v6f8v9",
+        "year": "1ο Έτος",
+        "exam": "Σεπτεμβρίου",
+        "period": "2022-2023",
+        "finalGrade": 2,
+        "notes": "",
+        "extraFields": [
+          {
+            "id": "id_mr6oht3m_ac6dgz",
+            "title": "Τελική εξέταση",
+            "grade": 2,
+            "weight": 100
+          }
+        ],
+        "updatedAt": 1783188671890
+      }
+    ]
+  }
+}

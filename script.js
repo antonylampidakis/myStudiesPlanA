@@ -14,6 +14,11 @@ let modalMode = null;
 let modalContext = null;
 let data = loadData();
 
+async function loadDataFromFile() {
+  const response = await fetch('data.json?ts=' + Date.now());
+  return await response.json();
+}
+
 function showPage(pageId, shouldRemember = true) {
   const targetPage = document.getElementById(pageId) || document.getElementById(defaultPageId);
   if (!targetPage) return;
