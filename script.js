@@ -12,7 +12,8 @@ const storageKey = 'studentPlannerData_v2';
 
 let modalMode = null;
 let modalContext = null;
-let data = loadData();
+//let data = loadData();
+let data = defaultData();
 
 async function loadDataFromFile() {
   const response = await fetch('data.json?ts=' + Date.now());
@@ -689,10 +690,19 @@ function closeFormModal() {
   modalMode = null;
   modalContext = null;
 }
+async function initApp() {
+  try {
+    data = await loadDataFromFile();
+    saveData();
+  } catch (error) {
+    data = loadData();
+  }
 
-refreshAll();
-showPage(getInitialPageId(), false);
+  refreshAll();
+  showPage(getInitialPageId(), false);
+}
 
+initApp();
 function exportBackup() {
 
     const backup = {
