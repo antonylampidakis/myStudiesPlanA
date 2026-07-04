@@ -692,7 +692,8 @@ function closeFormModal() {
 }
 async function initApp() {
   try {
-    data = await loadDataFromFile();
+    const fileData = await loadDataFromFile();
+    data = fileData.data || fileData;
     saveData();
   } catch (error) {
     data = loadData();
