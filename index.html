@@ -1,80 +1,133 @@
 <!DOCTYPE html>
 <html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="logo">SP</div>
+      <div>
+        <h2>Student Planner</h2>
+        <p>Οργάνωση σπουδών</p>
+      </div>
+    </div>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>myStudiesPlan - DIT</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-  </head>
-
-  <body>
-
-    <!-- Κεφαλίδα ιστοσελίδας -->
-    <header class="site-header">
-      <h1>myStudiesPlan - DIT</h1>
-    </header>
-
-    <!-- Κύριο μενού πλοήγησης -->
-    <nav class="site-nav">
-      <ul>
-        <li><a href="index.html">Αρχική</a></li>
-        <li><a href="Analitikibathomoligia.html">Αναλυτική βαθμολογία</a></li>
-        <li><a href="Finalgrade.html">Τελική βαθμολογία μαθήατος</a></li>
-        <li><a href="Ptyxio.html">Απετήσεις ληψης πτυχίου </a></li>
-        <li><a href="mathimata.html">Μαθήματα </a></li>
-      </ul>
+    <nav>
+      <button class="nav-link" data-page="dashboard">DASHBOARD</button>
+      <button class="nav-link active" data-page="grades">ΒΑΘΜΟΛΟΓΙΕΣ</button>
+      <button class="nav-link" data-page="exams">ΕΞΕΤΑΣΤΙΚΕΣ</button>
+      <button class="nav-link" data-page="requirements">ΑΠΑΙΤΗΣΕΙΣ ΠΤΥΧΙΟΥ</button>
+      <button class="nav-link" data-page="courses">ΜΑΘΗΜΑΤΑ</button>
+      <button class="nav-link" data-page="settings">ΡΥΘΜΙΣΕΙΣ</button>
     </nav>
+  </aside>
 
-    <!-- Κύριο περιεχόμενο της σελίδας -->
-    <main class="content">
-      <section class="main-section">
-        
-        <h2 style="text-align: center;">Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ & Αντώνης Γιώργος Λαμπιδακης </h2>
+  <main class="main">
+    <section id="dashboard" class="page">
+      <div class="page-header">
+        <h1>Dashboard</h1>
+        <p>Γρήγορη εικόνα για την πρόοδο σου, τα ECTS και τους βαθμούς.</p>
+      </div>
 
-        <div class="container">
-          <p style="text-align: justify;">Η παρούσα ιστοσελίδα αποτελεί μια προσωπική πλατφόρμα καταγραφής και παρακολούθησης της ακαδημαϊκής μου επίδοσης στα μαθήματα της σχολής μου. Περιλαμβάνει αναλυτικές πληροφορίες για τους βαθμούς, τα ECTS κάθε μαθήματος και τη συνολική μου πρόοδο, δίνοντάς μου μια ολοκληρωμένη εικόνα της ακαδημαϊκής μου πορείας.(Writed by ChatGpt)</p>
+      <div id="dashboardStats" class="stats-grid"></div>
+
+      <div class="content-grid">
+        <div class="panel">
+          <h3>Πρόσφατες βαθμολογίες</h3>
+          <ul id="recentGrades" class="clean-list"></ul>
         </div>
-
-        <br>
-
-        <div class="container">
-          <h3 style="font-size: 14px; color: gray;">Ακαδημαϊκή Πορεία :  Φοιτητής από το 2022 έως το 20XX</h3>
+        <div class="panel">
+          <h3>Πρόοδος ECTS</h3>
+          <div class="progress"><div id="dashboardEctsProgress">0%</div></div>
+          <p id="dashboardEctsText" class="muted"></p>
         </div>
+      </div>
+    </section>
 
-        <br>
+    <section id="grades" class="page active-page">
+      <div class="page-header">
+        <h1>Βαθμολογίες</h1>
+        <p>Καρτέλες ανά έτος, με δύο πίνακες ανά έτος. Η προσθήκη/επεξεργασία γίνεται με κανονική φόρμα.</p>
+      </div>
+      <div id="gradesContainer"></div>
+    </section>
 
-        <div class="container">
-          <img src="Files/images.png" alt="Περιγραφή εικόνας">
-          <div class="text" >
-            <p style="text-align: justify;">Το Τμήμα Πληροφορικής και Τηλεπικοινωνιών του ΕΚΠΑ, ιδρυμένο το 1989, ανήκει στη Σχολή Θετικών Επιστημών. Διακρίνεται για την υψηλή ποιότητα σπουδών, την καινοτόμο διδασκαλία, τη διεπιστημονικότητα στα μεταπτυχιακά, την αριστεία στην έρευνα και τις διεθνείς διακρίσεις.</p>
-          </div>
-        </div>
+    <section id="exams" class="page">
+      <div class="page-header">
+        <h1>Εξεταστικές</h1>
+        <p>Αναδιπλούμενες καρτέλες 1ο, 2ο, 3ο και 4ο έτος. Κάθε εγγραφή μπορεί να έχει δυναμικά βαθμολογικά πεδία.</p>
+      </div>
+      <div id="examsContainer"></div>
+    </section>
 
-        <br>
+    <section id="requirements" class="page">
+      <div class="page-header">
+        <h1>Απαιτήσεις Πτυχίου</h1>
+        <p>Τα ECTS, ο μέσος όρος και οι απαιτήσεις υπολογίζονται από τις πραγματικές βαθμολογίες.</p>
+      </div>
 
-        <div class="container">
-          <img src="Files/imageΑ.png" alt="Περιγραφή εικόνας">
-          <div class="text">
-            <p style="text-align: justify;">Είμαι ο Αντώνιος Γεώργιος Λαμπιδάκης, ένας νέος φοιτητής πληροφορικής, 21 ετών με πολύ όρεξη για μάθηση και ενασχόληση στον τομέα της Επιστήμης μου.</p>
-          </div>
-        </div>
+      <div id="requirementsContainer"></div>
+    </section>
 
-      </section>
+    <section id="courses" class="page">
+      <div class="page-header">
+        <h1>Μαθήματα</h1>
+        <p>Πρόγραμμα σπουδών ανά εξάμηνο. Οι βαθμοί τραβιούνται από τη σελίδα Βαθμολογίες.</p>
+      </div>
+      <div id="coursesContainer"></div>
+    </section>
+    <section id="settings" class="page">
+    <div class="page-header">
+        <h1>Ρυθμίσεις</h1>
+        <p>Αντίγραφα ασφαλείας και διαχείριση δεδομένων.</p>
+    </div>
 
-      <!-- Sidebar με επιπλέον πληροφορίες -->
-      <aside class="sidebar">
+    <div class="panel">
 
-        <div id="sidebar-slot"></div>
+        <h3>Αντίγραφα ασφαλείας</h3>
 
-      </aside>
-    </main>
+        <button class="action-btn add-btn"
+                onclick="exportBackup()">
+            📤 Εξαγωγή δεδομένων
+        </button>
 
-    <!-- Υποσέλιδο με δικαιώματα -->
-    <footer class="site-footer">
-      <p>© Antony 2026</p>
-    </footer>
+        <button class="action-btn edit-btn"
+                onclick="document.getElementById('backupFile').click()">
+            📥 Εισαγωγή δεδομένων
+        </button>
 
-  </body>
+        <input
+            type="file"
+            id="backupFile"
+            accept=".json"
+            style="display:none"
+            onchange="importBackup(event)">
+
+    </div>
+
+</section>
+  </main>
+
+  <div id="courseModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box">
+      <button class="close-btn" type="button" onclick="closeModal()">×</button>
+      <h2 id="modalTitle">Μάθημα</h2>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div id="formModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-box form-modal-box">
+      <button class="close-btn" type="button" onclick="closeFormModal()">×</button>
+      <h2 id="formModalTitle">Φόρμα</h2>
+      <form id="entryForm"></form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
