@@ -20,6 +20,17 @@ const SUPABASE_KEY = "sb_publishable_PFgx4OcqbWIN5NpzrPLV6w_5Mv3dOmQ";
 
 const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
+const defaultGradesYearKey = 'studentPlannerDefaultGradesYear';
+const defaultExamsYearKey = 'studentPlannerDefaultExamsYear';
+
+function getDefaultGradesYearIndex() {
+  return Number(localStorage.getItem(defaultGradesYearKey) ?? 3);
+}
+
+function getDefaultExamsYearIndex() {
+  return Number(localStorage.getItem(defaultExamsYearKey) ?? 1);
+}
+
 async function loadDataOnline() {
   const { data: row, error } = await supabaseClient
     .from("student_planner_data")
@@ -271,7 +282,7 @@ function buildDashboard() {
 function buildGrades() {
   const container = document.getElementById('gradesContainer');
   container.innerHTML = years.map((year, yearIndex) => `
-    <div class="accordion ${yearIndex === 3 ? 'open' : ''}">
+    <div class="accordion ${yearIndex === getDefaultGradesYearIndex() ? 'open' : ''}">
       <button class="accordion-header" type="button">${year}<span>⌄</span></button>
       <div class="accordion-body">
         ${gradeTables.map(tableName => buildGradeTable(year, tableName)).join('')}
@@ -313,7 +324,7 @@ function buildGradeTable(year, tableName) {
 function buildExams() {
   const container = document.getElementById('examsContainer');
   container.innerHTML = years.map((year, yearIndex) => `
-    <div class="accordion ${yearIndex === 1 ? 'open' : ''}">
+    <div class="accordion ${yearIndex === getDefaultExamsYearIndex() ? 'open' : ''}">
       <button class="accordion-header" type="button">${year}<span>⌄</span></button>
       <div class="accordion-body">
         ${exams.map(exam => buildExamTable(year, exam)).join('')}
@@ -726,6 +737,7 @@ async function initApp() {
   }
 
   refreshAll();
+  loadDefaultTabsSettings();
   showPage(getInitialPageId(), false);
 }
 
@@ -806,4 +818,27 @@ function importBackup(event) {
 
     reader.readAsText(file);
 
+}
+
+function saveDefaultTabs() {
+  const gradesYear = document.getElementById('defaultGradesYear')?.value;
+  const examsYear = document.getElementById('defaultExamsYear')?.value;
+
+  if (gradesYear !== undefined) {
+    localStorage.setItem(defaultGradesYearKey, gradesYear);
+  }
+
+  if (examsYear !== undefined) {
+    localStorage.setItem(defaultExamsYearKey, examsYear);
+  }
+
+  refreshAll();
+}
+
+function loadDefaultTabsSettings() {
+  const gradesSelect = document.getElementById('defaultGradesYear');
+  const examsSelect = document.getElementById('defaultExamsYear');
+
+  if (gradesSelect) gradesSelect.value = getDefaultGradesYearIndex();
+  if (examsSelect) examsSelect.value = getDefaultExamsYearIndex();
 }
