@@ -15,9 +15,35 @@ let modalContext = null;
 //let data = loadData();
 let data = defaultData();
 
-async function loadDataFromFile() {
-  const response = await fetch('data.json?ts=' + Date.now());
-  return await response.json();
+const SUPABASE_URL = "https://cftmblaroflpwzjsadpm.supabase.co";
+const SUPABASE_KEY = "sb_publishable_PFgx4OcqbWIN5NpzrPLV6w_5Mv3dOmQ";
+
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+async function loadDataOnline() {
+  const { data: row, error } = await supabaseClient
+    .from("student_planner_data")
+    .select("data")
+    .eq("id", "main")
+    .single();
+
+  if (error) throw error;
+
+  return row.data;
+}
+
+async function saveDataOnline() {
+  const { error } = await supabaseClient
+    .from("student_planner_data")
+    .update({
+      data: data,
+      updated_at: new Date().toISOString()
+    })
+    .eq("id", "main");
+
+  if (error) {
+    console.error("Supabase save error:", error);
+  }
 }
 
 function showPage(pageId, shouldRemember = true) {
@@ -73,8 +99,8 @@ function loadData() {
 
 function saveData() {
   localStorage.setItem(storageKey, JSON.stringify(data));
+  saveDataOnline();
 }
-
 function escapeHtml(value) {
   return String(value ?? '').replace(/[&<>'"]/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[char]));
 }
@@ -692,10 +718,10 @@ function closeFormModal() {
 }
 async function initApp() {
   try {
-    const fileData = await loadDataFromFile();
-    data = fileData.data || fileData;
-    saveData();
+    data = await loadDataOnline();
+    localStorage.setItem(storageKey, JSON.stringify(data));
   } catch (error) {
+    console.error("Supabase load error:", error);
     data = loadData();
   }
 
