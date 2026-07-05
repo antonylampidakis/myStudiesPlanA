@@ -337,7 +337,7 @@ function buildExamTable(year, exam) {
               <tr class="${getGradeRowClass(row.finalGrade)}">
                 <td>${index + 1}</td>
                 <td>${escapeHtml(course?.name || 'Άγνωστο μάθημα')}</td>
-                <td>${escapeHtml(course?.professor || '-')}</td>
+                
                 <td>${escapeHtml(row.period || '-')}</td>
                 <td>${formatGrade(row.finalGrade)}</td>
                 <td>${fields}</td>
